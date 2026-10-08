@@ -1,0 +1,382 @@
+Substation_Name,Hospital_Name,Distance_km,Dependency_Strength
+220kV BORIVALI,Arihant Heart and Surgical Hospital,1.81,1.0
+220kV BORIVALI,Mauli Hospital,4.603,0.7
+220kV BORIVALI,Chhaya Surgical Home,4.703,0.7
+220kV BORIVALI,Shreeji Hospital,2.093,0.7
+220kV BORIVALI,Eye Smile Clinic,4.648,0.7
+220kV BORIVALI,Surya Eye Clinic,4.843,0.7
+220kV BORIVALI,Ear-Nose-Throat And Eye Clinic,4.638,0.7
+220kV BORIVALI,Jay Polyclinic Surgical and Maternity Nursing Home and Iccu,4.952,0.7
+220kV BORIVALI,Manish Nursing Home,4.793,0.7
+220kV BORIVALI,Neelam Nursing Home (Lenest) - Malad (W),3.004,0.7
+220kV BORIVALI,Puranik Hospital,4.743,0.7
+220kV BORIVALI,Saraogi Maternity and General Hospital,4.553,0.7
+220kV BORIVALI,Surana Hospital And Research Centre,4.386,0.7
+220kV BORIVALI,Dhanshri Hospital,2.875,0.7
+220kV BORIVALI,Pratik Hospital and Maternity Home,4.312,0.7
+220kV BORIVALI,Anand Nursing Home - Borivali (E),1.81,1.0
+220kV BORIVALI,"Ankit Fracture, Maternity and Surgical Hospital",1.81,1.0
+220kV BORIVALI,Asian Eye Institute And Laser Centre,3.005,0.7
+220kV BORIVALI,Crystal Hospitals,1.81,1.0
+220kV BORIVALI,"Dr Parikhs Maternity, Gynaec, and General Hospital",2.606,0.7
+220kV BORIVALI,Mohit Hospital and Heart Centre,2.764,0.7
+220kV BORIVALI,Navjeevan Global Heart Centre,2.332,0.7
+220kV BORIVALI,Nirmay Mother Care Centre,4.036,0.7
+220kV BORIVALI,Parijat Child Health Clinic,4.643,0.7
+220kV BORIVALI,Parmar Hospital,2.613,0.7
+220kV BORIVALI,Purnima Hospital,3.183,0.7
+220kV BORIVALI,Qualitas Diagnostics Center,1.81,1.0
+220kV BORIVALI,Ratika Hospital and Research Centre,1.81,1.0
+220kV BORIVALI,Riddhi Eye Clinic,1.81,1.0
+220kV BORIVALI,Robindra Nursing Home,1.81,1.0
+220kV BORIVALI,Roshni Eye Clinic,2.668,0.7
+220kV BORIVALI,Shivam Eye Care Centre,1.81,1.0
+220kV BORIVALI,Shree Krishna Hospital,4.585,0.7
+220kV BORIVALI,Shri K V O Jain Manav Seva Kendra Navneet Hospital,1.81,1.0
+220kV BORIVALI,Utkarsh Nursing Home,2.765,0.7
+220kV BORIVALI,Akshar Eye Clinic,4.312,0.7
+220kV BORIVALI,Bhatia Maternity and Ivf Centre,4.386,0.7
+220kV BORIVALI,Dr. Vora`S Premature Critical Care and General Hospital,4.083,0.7
+220kV BORIVALI,Grace Maternity and Nursing Home - Kandivli (W),4.511,0.7
+220kV BORIVALI,Jobanputra Nursing Home,3.318,0.7
+220kV BORIVALI,Nidhi Nursing Home and Iccu,4.198,0.7
+220kV BORIVALI,Paarth Hospital,4.312,0.7
+220kV BORIVALI,Panorama Eye Clinic Superspeciality Eye Care,3.9,0.7
+220kV BORIVALI,Sai Vilayatrai Charitable Polyclinc,4.025,0.7
+220kV BORIVALI,Saraswati Hospital(Kandivali),4.312,0.7
+220kV BORIVALI,Shah Surgical Hospital and Maternity Home P. Ltd.,3.491,0.7
+220kV BORIVALI,Shree Krishna Hospital - Kandivali,4.532,0.7
+220kV BORIVALI,Sumangal Hospital,4.312,0.7
+220kV BORIVALI,Vinayak Nursing Home`,4.502,0.7
+220kV BORIVALI,Abhinav Sushrut Hospital,4.811,0.7
+220kV BORIVALI,Akshit Maternity Home,4.726,0.7
+220kV BORIVALI,Ashirwad Maternity and Nursing Home - Dahisar,4.603,0.7
+220kV BORIVALI,Balaji Polyclinic and Criticare Centre,3.175,0.7
+220kV BORIVALI,Dr Ajay Shah Pathology,4.603,0.7
+220kV BORIVALI,Dr Mandar Pandit Clinic,4.925,0.7
+220kV BORIVALI,Dr Worlikar's Shree Surgical and General Nursing Home,4.603,0.7
+220kV BORIVALI,Dr. M. L Dhawale Memorial Trust,4.615,0.7
+220kV BORIVALI,Dr.Nikams Eye Care And Laser Centre,4.739,0.7
+220kV BORIVALI,Jai Ambe Poly Clinic Nursing Home and Maternity Hosp,4.603,0.7
+220kV BORIVALI,Kk Maternity And General Hospital,4.136,0.7
+220kV BORIVALI,"Life Line Hospital - Dahisar,Mumbai",4.603,0.7
+220kV BORIVALI,Namitha Polyclinic and Hospital,4.603,0.7
+220kV BORIVALI,Navdurga Fracture And Accident Centre,4.603,0.7
+220kV BORIVALI,Navneet Hi-Tech,4.603,0.7
+220kV BORIVALI,Rohit Nursing Home - Dahisar,4.482,0.7
+220kV BORIVALI,Sanghavi Eye and Diabetes Care Center,4.603,0.7
+220kV BORIVALI,Total Woman Medical Centre - Dahisar,3.605,0.7
+220kV BORIVALI,Vdurga Fracture And Accident Centre,4.603,0.7
+220kV BORIVALI,Vijay Polyclinic and Care Centre,4.603,0.7
+220kV BORIVALI,Vishwanath Hospital,3.513,0.7
+220kV BORIVALI,M.M.Hospital,4.585,0.7
+220kV BORIVALI,Dr. R.J. Ganatra's Nursing Home,3.723,0.7
+220kV BORIVALI,Shraddha Hospital,4.603,0.7
+220kV BORIVALI,Bhargav Medical Centre,4.041,0.7
+220kV BORIVALI,Dr. Abhijit Mahadeo Valanju,4.969,0.7
+220kV BORIVALI,Rajendra Maternity and Surgical Nursing Home,4.541,0.7
+220kV BORIVALI,Aastha Eye Clinic,4.771,0.7
+220kV BORIVALI,Anand Medical Centre,2.981,0.7
+220kV BORIVALI,Bhagat Nursing Home,3.114,0.7
+220kV BORIVALI,Dr. Alok Shahs Iccu and Nursing Home,3.723,0.7
+220kV BORIVALI,Lancelot Dialysis Unit,3.016,0.7
+220kV BORIVALI,Nanda Nursing Home-Borivli,3.723,0.7
+220kV BORIVALI,Niramay Mother-Care Centre (Maternity and Surgical),4.336,0.7
+220kV BORIVALI,Patel Nursing Home,3.018,0.7
+220kV BORIVALI,Raj Jyoti Hospital,4.563,0.7
+220kV BORIVALI,Renuka Children Clinic and Medicare Centre,4.827,0.7
+220kV BORIVALI,Rose Petal Nursing Home,3.463,0.7
+220kV BORIVALI,Sanghvi Maternity and Surgical Hospital,3.433,0.7
+220kV BORIVALI,Seth Ent and Eye Clinic,4.786,0.7
+220kV BORIVALI,Shah Surgical And Maternity Nursing Home,3.013,0.7
+220kV BORIVALI,Shivani Medical Centre,3.896,0.7
+220kV BORIVALI,Shree Borivli Gujarati Seva Mandal,3.281,0.7
+220kV BORIVALI,Vasudhan Cosmetic Plastic Surgery Centre,3.016,0.7
+220kV BORIVALI,Vinit Eye Clinic Retina And Laser Centre,3.814,0.7
+220kV BORIVALI,Agrawal Clinic,3.767,0.7
+220kV BORIVALI,Devangi Hospital,4.46,0.7
+220kV BORIVALI,Krishna Eye Care Centre,4.484,0.7
+220kV BORIVALI,Malad Clinical and Pathological Laboratory,4.36,0.7
+220kV BORIVALI,Sanjeevani Surgical and General Hospital,4.36,0.7
+220kV BORIVALI,Shraddha Orthopedic and Surgical Hospital,3.729,0.7
+220kV BORIVALI,Suchak Hospital,4.29,0.7
+220kV BORIVALI,Laxmi Clinic - Kandivli - (Mumbai),2.653,0.7
+220kV BORIVALI,Medha Maternity and Nursing Home - Kandivali (E) Mumbai,2.161,0.7
+220kV BORIVALI,New Life Nursing Home,1.88,1.0
+220kV BORIVALI,"Omm Sai Nursing Home - Kandivali, Mumbai",0.798,1.0
+220kV BORIVALI,Paramount Ganpati Health Care - Kandivali,0.798,1.0
+220kV BORIVALI,Saibaba Maternity and Nursing Home,2.876,0.7
+220kV BORIVALI,Sanchaiti Hospital,2.688,0.7
+220kV BORIVALI,Shreeji Hospital (Kandivli),1.921,1.0
+220kV BORIVALI,Vikas Diagnostic Centre,1.578,1.0
+220kV BORIVALI,Ameya Orthopaedic Centre,3.723,0.7
+220kV BORIVALI,Sohum Eyecare and Oculoplasty Centre,4.703,0.7
+220kV BORIVALI,Aditi Hospital,1.779,1.0
+220kV BORIVALI,Gokul Hospital,1.814,1.0
+220kV BORIVALI,Lifeline Hospital,4.246,0.7
+220kV TROMBAY,Aryan Hospital and Icu,1.033,1.0
+220kV TROMBAY,Jyoti Nursing Home,4.747,0.7
+220kV TROMBAY,Aditya Health Care,3.655,0.7
+220kV TROMBAY,Diamond Polyclinic and Nursing Home,3.655,0.7
+220kV TROMBAY,Disha Polyclinic and Nursing Home,3.655,0.7
+220kV TROMBAY,Dr Smita Mukherjees Eye Clinic,3.655,0.7
+220kV TROMBAY,Dr. Das Hospital - Chembur (Mumbai),3.655,0.7
+220kV TROMBAY,Dr. Sanjay Sonars Laproscopy and Scopy Centre,3.655,0.7
+220kV TROMBAY,Dr. Shubha Rao,3.655,0.7
+220kV TROMBAY,Excel Urology Centre,3.655,0.7
+220kV TROMBAY,Hegde Hospital Surgical and Maternity Nursing Home,3.655,0.7
+220kV TROMBAY,Icon Hospital and Research Centre,3.655,0.7
+220kV TROMBAY,Laproscopy and Scopy Center,3.655,0.7
+220kV TROMBAY,Laxmi Maternity Home,3.655,0.7
+220kV TROMBAY,Lc Manek's Polyclinic And Nursing Home,3.655,0.7
+220kV TROMBAY,Lion Vithal Kalgutkar Medical Centre,3.655,0.7
+220kV TROMBAY,Navnit Clinic (Dr. Parihar Eye and Ent,3.655,0.7
+220kV TROMBAY,Niramaya General Hospital,3.655,0.7
+220kV TROMBAY,Patankar Hand and Limb Reconstruction Clinic,3.655,0.7
+220kV TROMBAY,Shree Chembur Jain Medical Relief Centre,3.655,0.7
+220kV TROMBAY,Sumitra Eye Clinic,3.655,0.7
+220kV TROMBAY,Yash Eye Care And Polyclinic,3.655,0.7
+220kV TROMBAY,Dr. Shalini Jaisinghani Dental Surgeon - Chembur,3.655,0.7
+220kV TROMBAY,Dr.Bhute Nursing Home,2.228,0.7
+220kV TROMBAY,Nayak Medicare - Chembur,3.655,0.7
+220kV TROMBAY,Sai Baba Hospital,2.228,0.7
+220kV TROMBAY,Shiv Polyclinic and Nursing Home,3.655,0.7
+220kV TROMBAY,Nova Medical Centres Private Limited,3.655,0.7
+220kV TROMBAY,Disha Psychiatric Clinic,3.655,0.7
+220kV TROMBAY,Dr Indumati Gopinathan Computerised Laboratory,3.655,0.7
+220kV TROMBAY,Rane Hospital,3.655,0.7
+220kV TROMBAY,Rushi Nursing Home,3.655,0.7
+220kV TROMBAY,Inlaks General Hospital,3.655,0.7
+220kV MULUND,Saarthi Hospital,3.41,0.7
+220kV MULUND,Gandhi Hospital - Navi Mumbai,3.615,0.7
+220kV MULUND,Dr Redkars Maternity and Nursing Home,4.421,0.7
+220kV MULUND,Aniket Nuring Home,3.357,0.7
+220kV MULUND,Ankur Maternity and Surgical Nursing Home,3.33,0.7
+220kV MULUND,Shaily Nursing Home,3.126,0.7
+220kV MULUND,Fortis Hospitals Limited,2.4,0.7
+220kV MULUND,Dr. Raut`S Maternity and Surgical Nursing Home,2.192,0.7
+220kV MULUND,Omkar Eye Care Center,3.083,0.7
+220kV MULUND,Dr. L.H. Hiranandani Hospital,4.929,0.7
+220kV MULUND,Amruta Maternity and Surgical Nursing Home,3.41,0.7
+220kV MULUND,Diamond Maternity and General Hospital,2.192,0.7
+220kV MULUND,Dr Bothra's Hospital,3.41,0.7
+220kV MULUND,Dr Patanis Eye Clinic,3.41,0.7
+220kV MULUND,Dr. Bhatias Ruby Hospital - Bhandup - Mumbai,3.81,0.7
+220kV MULUND,Dr. Kolhes Eye Clinic - Bhandup,3.41,0.7
+220kV MULUND,Dr. Malwankar's Romeen Nursing Home,3.41,0.7
+220kV MULUND,Dr. Thakurs Ear Nose Throat Clinic And Hospital - Bhandup (W) Mumbai,2.584,0.7
+220kV MULUND,Dr.Badwaiks Maternity and General Hospital,3.249,0.7
+220kV MULUND,Dr.Bothras Hospital,3.41,0.7
+220kV MULUND,Eye and I Dr.Kolhe's Eye Clinic,2.954,0.7
+220kV MULUND,Gaurav Maternity and Surgical Hospital,3.41,0.7
+220kV MULUND,I and Eye Dr Kolhes Eye Clinic,2.954,0.7
+220kV MULUND,J. K. Child Health Care and Nicu,2.804,0.7
+220kV MULUND,Krishna Nursing Home,2.812,0.7
+220kV MULUND,Lotus Multispeciality Hospital,2.49,0.7
+220kV MULUND,M.S.Maternity and General Hospital,3.534,0.7
+220kV MULUND,Maauli Hospital,3.41,0.7
+220kV MULUND,Madhu Polyclinic and Nursing Home,3.41,0.7
+220kV MULUND,Mahek Nursing Home,3.27,0.7
+220kV MULUND,Nadkarni Eye Care Centres,2.85,0.7
+220kV MULUND,Netramani Chikitsalay,3.41,0.7
+220kV MULUND,Omkar Hospital,2.812,0.7
+220kV MULUND,Rathod Nursing Home and Iccu,3.41,0.7
+220kV MULUND,Saarthi Hospital,3.124,0.7
+220kV MULUND,Sanjeevan Nursing Home and Iccu,3.41,0.7
+220kV MULUND,Sankeshi Bharat,3.41,0.7
+220kV MULUND,Sas Health Care Pvt. Limited,3.583,0.7
+220kV MULUND,Saubhagya Hospital,3.41,0.7
+220kV MULUND,Setty's Endoscopic Surgical Centre,3.335,0.7
+220kV MULUND,Shah Children Hospital And Newborn Care Centre,3.41,0.7
+220kV MULUND,Shanti Maternity Clinic,3.41,0.7
+220kV MULUND,Shri Bal Chikitsalaya,3.41,0.7
+220kV MULUND,Sulochan Eye,3.41,0.7
+220kV MULUND,Abhinav Kidney Dialysis And Health Centre - Mulund,3.71,0.7
+220kV MULUND,Aditi Hospital Accident Fracture and Surgical Clinic,3.71,0.7
+220kV MULUND,Anmmol Orthovision,4.822,0.7
+220kV MULUND,Apex Kidney Care (Dialysisnetworks),3.71,0.7
+220kV MULUND,Arogya Health Care,3.983,0.7
+220kV MULUND,Ashirwad Critical Care Unit,3.741,0.7
+220kV MULUND,Ashwini Hospital and I. C. C. U.,3.71,0.7
+220kV MULUND,Cancer Care,1.202,1.0
+220kV MULUND,Chetna Critical Care Unit,3.404,0.7
+220kV MULUND,Daxini Heart Centre,3.601,0.7
+220kV MULUND,Devkunj Charitablr Trust Matushri Mankbai Nagji Sa,3.71,0.7
+220kV MULUND,Dr Shettys E N T Hospital,3.71,0.7
+220kV MULUND,Dr. Khona E N T Hospital,3.71,0.7
+220kV MULUND,Dr. Mukhis Raj Hospital,3.741,0.7
+220kV MULUND,Dr. Simandhars Eye Care Centre,3.71,0.7
+220kV MULUND,Dr.Redkar's Maternity and Nursing Home,4.421,0.7
+220kV MULUND,Drishti Eye Care Centre,3.259,0.7
+220kV MULUND,Holy Trinity Hospital,2.741,0.7
+220kV MULUND,Indira Nursing Home,3.71,0.7
+220kV MULUND,Jas-Raj Hospital,3.481,0.7
+220kV MULUND,Joshi Surgical Hospital,4.421,0.7
+220kV MULUND,Lakshmi Nursing Home,2.754,0.7
+220kV MULUND,Lav-Kush Nursing Home,1.202,1.0
+220kV MULUND,Mahavir Orthopaedic and General Hospital - Mulund (W),3.71,0.7
+220kV MULUND,Mehera Ambe Nursing Home,3.71,0.7
+220kV MULUND,Mission Nephro-Uro Pvt Ltd,3.465,0.7
+220kV MULUND,Nav Drishti Netralaya,3.71,0.7
+220kV MULUND,Orthocare and Ria Nursing Home,3.811,0.7
+220kV MULUND,Padmashree Nursing Home (Mulund),3.944,0.7
+220kV MULUND,Pooja Nursing Home Pvt. Ltd.,2.76,0.7
+220kV MULUND,Prasad Surgical and Children Nursing Home,3.601,0.7
+220kV MULUND,Prasanna Aarogya Health Care,3.71,0.7
+220kV MULUND,Raj Hospital Mumbai,3.71,0.7
+220kV MULUND,Rpm Aarogya Hospital Private Limited (Chetna Critical Care Unit and Spt Hosp),3.259,0.7
+220kV MULUND,Saarthi Health Care,3.71,0.7
+220kV MULUND,Sanjay Eye Clinic,3.71,0.7
+220kV MULUND,Sarthi Health Care,3.71,0.7
+220kV MULUND,Shettys Endoscopic Surgical Center,3.243,0.7
+220kV MULUND,Shraddha Polyclinic and Nursing Home-Mulund-Mumbai,3.71,0.7
+220kV MULUND,Shree Ram Eye Care Centre,1.607,1.0
+220kV MULUND,Shree Sai Maternity and Surgical Nursing Home,2.799,0.7
+220kV MULUND,Surya Eye Institute and Research Centre Pvt Ltd,3.71,0.7
+220kV MULUND,Upasani Maternity and Surgical Nursing Home,3.71,0.7
+220kV MULUND,Veena Nagar Health Care Center and Hospital,4.372,0.7
+220kV MULUND,Vertex Hospital,4.89,0.7
+220kV MULUND,Aaditya Netralaya,1.202,1.0
+220kV MULUND,Chandraganga Hospital - Mulund,1.202,1.0
+220kV MULUND,Dr. Sabnis Maternity and Nursing Home,2.903,0.7
+220kV MULUND,Gomathi Eye Centre,2.678,0.7
+220kV MULUND,International Institute Of Sleep Sciences,3.183,0.7
+220kV MULUND,Mahatme  Eye Hospital,2.72,0.7
+220kV MULUND,Maher Maternity and Nursing Home,2.775,0.7
+220kV MULUND,Maruti Nursing Home,2.72,0.7
+220kV MULUND,Mulund Nursing Home,1.202,1.0
+220kV MULUND,Omkar Surgical and Maternity Home,1.202,1.0
+220kV MULUND,Saidhanhospital Iccu and Eye Care,1.202,1.0
+220kV MULUND,Shushrusha Hospital and Icu,2.919,0.7
+220kV MULUND,Aastha Health Care - Mumbai,3.944,0.7
+220kV MULUND,Ashirwad Maternity and Nursing Home,4.223,0.7
+220kV MULUND,Sai Siddhi Hospital,3.71,0.7
+220kV MULUND,Atul - Lok Hospital,4.491,0.7
+220kV MULUND,Jan-Seva Charitable Trust`S Sai-Krupa General Hospital,4.253,0.7
+220kV MULUND,Shrinathji Hospital,4.992,0.7
+220kV MULUND,Jeevan Jyot Hospital,2.755,0.7
+220kV MULUND,"CGHS Dispensary No.6, Ghatkopar",2.749,0.7
+220kV MULUND,"CGHS Dispensary No.17, Bhandup",3.432,0.7
+220kV MULUND,"CGHS Dispensary No.19, Mulund",3.71,0.7
+220kV MULUND,Dr. L H Hiranandani Hospital,4.929,0.7
+220kV MULUND,Surya Eye Institute and Research Centre Pvt Ltd,3.71,0.7
+220kV MULUND,Suruchi Eye Centre,3.735,0.7
+220kV MULUND,Hira Mongi Navneet Hospital,3.12,0.7
+220kV MULUND,Platinum Hospitals,1.202,1.0
+220kV MULUND,\nDr.Mukhi's Raj Hospital,3.71,0.7
+220kV MULUND,Sai Seva Hospital And Icu,3.43,0.7
+220kV GIS BHANDUP,Saarthi Hospital,1.17,1.0
+220kV GIS BHANDUP,Dr Redkars Maternity and Nursing Home,2.742,0.7
+220kV GIS BHANDUP,Aniket Nuring Home,3.031,0.7
+220kV GIS BHANDUP,Ankur Maternity and Surgical Nursing Home,3.111,0.7
+220kV GIS BHANDUP,Shaily Nursing Home,2.39,0.7
+220kV GIS BHANDUP,Fortis Hospitals Limited,0.847,1.0
+220kV GIS BHANDUP,Dr. Raut`S Maternity and Surgical Nursing Home,0.922,1.0
+220kV GIS BHANDUP,Omkar Eye Care Center,2.031,0.7
+220kV GIS BHANDUP,Dr. L.H. Hiranandani Hospital,3.281,0.7
+220kV GIS BHANDUP,Powai Polyclinic and Hospital,4.369,0.7
+220kV GIS BHANDUP,Amruta Maternity and Surgical Nursing Home,1.17,1.0
+220kV GIS BHANDUP,Diamond Maternity and General Hospital,0.922,1.0
+220kV GIS BHANDUP,Dr Bothra's Hospital,1.17,1.0
+220kV GIS BHANDUP,Dr Patanis Eye Clinic,1.17,1.0
+220kV GIS BHANDUP,Dr. Bhatias Ruby Hospital - Bhandup - Mumbai,1.866,1.0
+220kV GIS BHANDUP,Dr. Kolhes Eye Clinic - Bhandup,1.17,1.0
+220kV GIS BHANDUP,Dr. Malwankar's Romeen Nursing Home,1.17,1.0
+220kV GIS BHANDUP,Dr. Thakurs Ear Nose Throat Clinic And Hospital - Bhandup (W) Mumbai,1.293,1.0
+220kV GIS BHANDUP,Dr.Badwaiks Maternity and General Hospital,1.927,1.0
+220kV GIS BHANDUP,Dr.Bothras Hospital,1.17,1.0
+220kV GIS BHANDUP,Eye and I Dr.Kolhe's Eye Clinic,1.436,1.0
+220kV GIS BHANDUP,Gaurav Maternity and Surgical Hospital,1.17,1.0
+220kV GIS BHANDUP,I and Eye Dr Kolhes Eye Clinic,1.436,1.0
+220kV GIS BHANDUP,J. K. Child Health Care and Nicu,1.575,1.0
+220kV GIS BHANDUP,Krishna Nursing Home,0.903,1.0
+220kV GIS BHANDUP,Lotus Multispeciality Hospital,0.656,1.0
+220kV GIS BHANDUP,M.S.Maternity and General Hospital,1.58,1.0
+220kV GIS BHANDUP,Maauli Hospital,1.17,1.0
+220kV GIS BHANDUP,Madhu Polyclinic and Nursing Home,1.17,1.0
+220kV GIS BHANDUP,Mahek Nursing Home,1.239,1.0
+220kV GIS BHANDUP,Nadkarni Eye Care Centres,0.935,1.0
+220kV GIS BHANDUP,Netramani Chikitsalay,1.17,1.0
+220kV GIS BHANDUP,Omkar Hospital,0.903,1.0
+220kV GIS BHANDUP,Rathod Nursing Home and Iccu,1.17,1.0
+220kV GIS BHANDUP,Saarthi Hospital,1.432,1.0
+220kV GIS BHANDUP,Sanjeevan Nursing Home and Iccu,1.17,1.0
+220kV GIS BHANDUP,Sankeshi Bharat,1.17,1.0
+220kV GIS BHANDUP,Sas Health Care Pvt. Limited,1.595,1.0
+220kV GIS BHANDUP,Saubhagya Hospital,1.17,1.0
+220kV GIS BHANDUP,Setty's Endoscopic Surgical Centre,1.476,1.0
+220kV GIS BHANDUP,Shah Children Hospital And Newborn Care Centre,1.17,1.0
+220kV GIS BHANDUP,Shanti Maternity Clinic,1.17,1.0
+220kV GIS BHANDUP,Shri Bal Chikitsalaya,1.17,1.0
+220kV GIS BHANDUP,Sulochan Eye,1.17,1.0
+220kV GIS BHANDUP,Abhinav Kidney Dialysis And Health Centre - Mulund,1.582,1.0
+220kV GIS BHANDUP,Aditi Hospital Accident Fracture and Surgical Clinic,1.582,1.0
+220kV GIS BHANDUP,Anmmol Orthovision,3.165,0.7
+220kV GIS BHANDUP,Apex Kidney Care (Dialysisnetworks),1.582,1.0
+220kV GIS BHANDUP,Arogya Health Care,2.536,0.7
+220kV GIS BHANDUP,Ashirwad Critical Care Unit,2.101,0.7
+220kV GIS BHANDUP,Ashwini Hospital and I. C. C. U.,1.582,1.0
+220kV GIS BHANDUP,Cancer Care,2.603,0.7
+220kV GIS BHANDUP,Chetna Critical Care Unit,2.269,0.7
+220kV GIS BHANDUP,Daxini Heart Centre,2.347,0.7
+220kV GIS BHANDUP,Devkunj Charitablr Trust Matushri Mankbai Nagji Sa,1.582,1.0
+220kV GIS BHANDUP,Dr Shettys E N T Hospital,1.582,1.0
+220kV GIS BHANDUP,Dr. Khona E N T Hospital,1.582,1.0
+220kV GIS BHANDUP,Dr. Mukhis Raj Hospital,2.101,0.7
+220kV GIS BHANDUP,Dr. Simandhars Eye Care Centre,1.582,1.0
+220kV GIS BHANDUP,Dr.Redkar's Maternity and Nursing Home,2.742,0.7
+220kV GIS BHANDUP,Drishti Eye Care Centre,2.236,0.7
+220kV GIS BHANDUP,Holy Trinity Hospital,1.603,1.0
+220kV GIS BHANDUP,Indira Nursing Home,1.582,1.0
+220kV GIS BHANDUP,Jas-Raj Hospital,2.349,0.7
+220kV GIS BHANDUP,Joshi Surgical Hospital,2.742,0.7
+220kV GIS BHANDUP,Lakshmi Nursing Home,1.539,1.0
+220kV GIS BHANDUP,Lav-Kush Nursing Home,2.603,0.7
+220kV GIS BHANDUP,Mahavir Orthopaedic and General Hospital - Mulund (W),1.582,1.0
+220kV GIS BHANDUP,Mehera Ambe Nursing Home,1.582,1.0
+220kV GIS BHANDUP,Mission Nephro-Uro Pvt Ltd,2.369,0.7
+220kV GIS BHANDUP,Nav Drishti Netralaya,1.582,1.0
+220kV GIS BHANDUP,Orthocare and Ria Nursing Home,2.921,0.7
+220kV GIS BHANDUP,Padmashree Nursing Home (Mulund),1.808,1.0
+220kV GIS BHANDUP,Pooja Nursing Home Pvt. Ltd.,1.522,1.0
+220kV GIS BHANDUP,Prasad Surgical and Children Nursing Home,2.347,0.7
+220kV GIS BHANDUP,Prasanna Aarogya Health Care,1.582,1.0
+220kV GIS BHANDUP,Raj Hospital Mumbai,1.582,1.0
+220kV GIS BHANDUP,Rpm Aarogya Hospital Private Limited (Chetna Critical Care Unit and Spt Hosp),2.236,0.7
+220kV GIS BHANDUP,Saarthi Health Care,1.582,1.0
+220kV GIS BHANDUP,Sanjay Eye Clinic,1.582,1.0
+220kV GIS BHANDUP,Sarthi Health Care,1.582,1.0
+220kV GIS BHANDUP,Shettys Endoscopic Surgical Center,1.914,1.0
+220kV GIS BHANDUP,Shraddha Polyclinic and Nursing Home-Mulund-Mumbai,1.582,1.0
+220kV GIS BHANDUP,Shree Ram Eye Care Centre,1.442,1.0
+220kV GIS BHANDUP,Shree Sai Maternity and Surgical Nursing Home,0.887,1.0
+220kV GIS BHANDUP,Surya Eye Institute and Research Centre Pvt Ltd,1.582,1.0
+220kV GIS BHANDUP,Upasani Maternity and Surgical Nursing Home,1.582,1.0
+220kV GIS BHANDUP,Veena Nagar Health Care Center and Hospital,2.54,0.7
+220kV GIS BHANDUP,Vertex Hospital,2.813,0.7
+220kV GIS BHANDUP,Aaditya Netralaya,2.603,0.7
+220kV GIS BHANDUP,Chandraganga Hospital - Mulund,2.603,0.7
+220kV GIS BHANDUP,Dr. Sabnis Maternity and Nursing Home,2.83,0.7
+220kV GIS BHANDUP,Gomathi Eye Centre,2.469,0.7
+220kV GIS BHANDUP,International Institute Of Sleep Sciences,2.478,0.7
+220kV GIS BHANDUP,Mahatme  Eye Hospital,2.316,0.7
+220kV GIS BHANDUP,Maher Maternity and Nursing Home,2.441,0.7
+220kV GIS BHANDUP,Maruti Nursing Home,2.316,0.7
+220kV GIS BHANDUP,Mulund Nursing Home,2.603,0.7
+220kV GIS BHANDUP,Omkar Surgical and Maternity Home,2.603,0.7
+220kV GIS BHANDUP,Saidhanhospital Iccu and Eye Care,2.603,0.7
+220kV GIS BHANDUP,Shushrusha Hospital and Icu,2.425,0.7
+220kV GIS BHANDUP,Aastha Health Care - Mumbai,1.808,1.0
+220kV GIS BHANDUP,Ashirwad Maternity and Nursing Home,1.5,1.0
+220kV GIS BHANDUP,Sai Siddhi Hospital,1.582,1.0
+220kV GIS BHANDUP,Atul - Lok Hospital,4.615,0.7
+220kV GIS BHANDUP,Jan-Seva Charitable Trust`S Sai-Krupa General Hospital,4.67,0.7
+220kV GIS BHANDUP,Jeevan Jyot Hospital,1.584,1.0
+220kV GIS BHANDUP,"CGHS Dispensary No.6, Ghatkopar",2.039,0.7
+220kV GIS BHANDUP,"CGHS Dispensary No.17, Bhandup",1.287,1.0
+220kV GIS BHANDUP,"CGHS Dispensary No.19, Mulund",1.582,1.0
+220kV GIS BHANDUP,Dr. L H Hiranandani Hospital,3.281,0.7
+220kV GIS BHANDUP,Surya Eye Institute and Research Centre Pvt Ltd,1.582,1.0
+220kV GIS BHANDUP,Hira Mongi Navneet Hospital,1.822,1.0
+220kV GIS BHANDUP,Platinum Hospitals,2.603,0.7
+220kV GIS BHANDUP,\nDr.Mukhi's Raj Hospital,1.582,1.0

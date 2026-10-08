@@ -1,0 +1,9 @@
+Organisation,Power_Station,Prime_Mover,Unit_No,Capacity_MW,Year_of_Comm,State
+TATA PCL,TROMBAY CCPP,GT-Gas,1,120,1993,Maharashtra
+TATA PCL,TROMBAY CCPP,GT-Gas,2,60,1994,Maharashtra
+TATA PCL,TROMBAY TPS,Steam,5,500,1984,Maharashtra
+TATA PCL,TROMBAY TPS,Steam,8,250,2009,Maharashtra
+NPCIL,TARAPUR,Nuclear,1,160,1960,Maharashtra
+NPCIL,TARAPUR,Nuclear,2,160,1969,Maharashtra
+NPCIL,TARAPUR,Nuclear,3,540,2005,Maharashtra
+NPCIL,TARAPUR,Nuclear,4,540,2006,Maharashtra

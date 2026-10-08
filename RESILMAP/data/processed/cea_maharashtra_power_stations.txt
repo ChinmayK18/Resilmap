@@ -1,0 +1,140 @@
+126 WR MaharashtraState Sector MAHAGENCO BHUSAWAL TPS Steam 3 210 1982
+WR MaharashtraState Sector MAHAGENCO BHUSAWAL TPS Steam 4 500 2012
+WR MaharashtraState Sector MAHAGENCO BHUSAWAL TPS Steam 5 500 2012
+WR MaharashtraState Sector MAHAGENCO BHUSAWAL TPS Steam 6 660 2025
+127 WR MaharashtraState Sector MAHAGENCO CHANDRAPUR(MAHARASHTRA) STPSSteam 3 210 1985
+WR MaharashtraState Sector MAHAGENCO CHANDRAPUR(MAHARASHTRA) STPSSteam 4 210 1986
+WR MaharashtraState Sector MAHAGENCO CHANDRAPUR(MAHARASHTRA) STPSSteam 5 500 1991
+WR MaharashtraState Sector MAHAGENCO CHANDRAPUR(MAHARASHTRA) STPSSteam 6 500 1992
+WR MaharashtraState Sector MAHAGENCO CHANDRAPUR(MAHARASHTRA) STPSSteam 7 500 1997
+WR MaharashtraState Sector MAHAGENCO CHANDRAPUR(MAHARASHTRA) STPSSteam 8 500 2015
+WR MaharashtraState Sector MAHAGENCO CHANDRAPUR(MAHARASHTRA) STPSSteam 9 500 2016
+128 WR MaharashtraState Sector MAHAGENCO KHAPARKHEDA TPS Steam 1 210 1989
+WR MaharashtraState Sector MAHAGENCO KHAPARKHEDA TPS Steam 2 210 1990
+WR MaharashtraState Sector MAHAGENCO KHAPARKHEDA TPS Steam 3 210 2000
+WR MaharashtraState Sector MAHAGENCO KHAPARKHEDA TPS Steam 4 210 2001
+WR MaharashtraState Sector MAHAGENCO KHAPARKHEDA TPS Steam 5 500 2011
+129 WR MaharashtraState Sector MAHAGENCO KORADI TPS Steam 6 210 1982
+WR MaharashtraState Sector MAHAGENCO KORADI TPS Steam 8 660 2015
+WR MaharashtraState Sector MAHAGENCO KORADI TPS Steam 9 660 2016
+WR MaharashtraState Sector MAHAGENCO KORADI TPS Steam 10 660 2016
+130 WR MaharashtraState Sector MAHAGENCO NASIK TPS Steam 3 210 1979
+WR MaharashtraState Sector MAHAGENCO NASIK TPS Steam 4 210 1980
+WR MaharashtraState Sector MAHAGENCO NASIK TPS Steam 5 210 1981
+131 WR MaharashtraState Sector MAHAGENCO PARAS TPS Steam 1 250 2007
+WR MaharashtraState Sector MAHAGENCO PARAS TPS Steam 2 250 2010
+132 WR MaharashtraState Sector MAHAGENCO PARLI TPS Steam 6 250 2007
+WR MaharashtraState Sector MAHAGENCO PARLI TPS Steam 7 250 2010
+WR MaharashtraState Sector MAHAGENCO PARLI TPS Steam 8 250 2016
+133 WR MaharashtraState Sector MAHAGENCO URAN CCPP GT-Gas 5 108 1985
+WR MaharashtraState Sector MAHAGENCO URAN CCPP GT-Gas 6 108 1985
+WR MaharashtraState Sector MAHAGENCO URAN CCPP GT-Gas 7 108 1985
+WR MaharashtraState Sector MAHAGENCO URAN CCPP GT-Gas 8 108 1985
+WR MaharashtraState Sector MAHAGENCO URAN CCPP GT-Gas 9 120 1994
+WR MaharashtraState Sector MAHAGENCO URAN CCPP GT-Gas 10 120 1994
+134 WR MaharashtraPrivate Sector AEML DAHANU TPS Steam 1 250 1995
+WR MaharashtraPrivate Sector AEML DAHANU TPS Steam 2 250 1995
+135 WR MaharashtraPrivate Sector APL ADANI POWER LIMITED TIRODA TPPSteam 1 660 2012
+WR MaharashtraPrivate Sector APL ADANI POWER LIMITED TIRODA TPPSteam 2 660 2013
+WR MaharashtraPrivate Sector APL ADANI POWER LIMITED TIRODA TPPSteam 3 660 2013
+WR MaharashtraPrivate Sector APL ADANI POWER LIMITED TIRODA TPPSteam 4 660 2014
+WR MaharashtraPrivate Sector APL ADANI POWER LIMITED TIRODA TPPSteam 5 660 2014
+136 WR MaharashtraPrivate Sector DIL DHARIWAL TPP Steam 1 300 2014
+WR MaharashtraPrivate Sector DIL DHARIWAL TPP Steam 2 300 2014
+137 WR MaharashtraPrivate Sector GEPL GEPL TPP Ph-I Steam 1 60 2012
+WR MaharashtraPrivate Sector GEPL GEPL TPP Ph-I Steam 2 60 2012
+138 WR MaharashtraPrivate Sector GMR ENERG GMR WARORA TPS Steam 1 300 2013
+WR MaharashtraPrivate Sector GMR ENERG GMR WARORA TPS Steam 2 300 2013
+139 WR MaharashtraPrivate Sector IEPL BELA TPS Steam 1 270 2013
+140 WR MaharashtraPrivate Sector JSWEL JSW RATNAGIRI TPP Steam 1 300 2010
+141 WR MaharashtraPrivate Sector PGPL MANGAON CCPP GT-Gas 1 388 2016
+142 WR MaharashtraPrivate Sector RATTANINDIA AMRAVATI TPS Steam 1 270 2013
+WR MaharashtraPrivate Sector RATTANINDIA AMRAVATI TPS Steam 2 270 2014
+WR MaharashtraPrivate Sector RATTANINDIA AMRAVATI TPS Steam 3 270 2015
+WR MaharashtraPrivate Sector RATTANINDIA AMRAVATI TPS Steam 4 270 2015
+WR MaharashtraPrivate Sector RATTANINDIA AMRAVATI TPS Steam 5 270 2015
+143 WR MaharashtraPrivate Sector RPGPL MIHAN TPS Steam 1 61.5 2012
+WR MaharashtraPrivate Sector RPGPL MIHAN TPS Steam 2 61.5 2012
+WR MaharashtraPrivate Sector RPGPL MIHAN TPS Steam 3 61.5 2012
+WR MaharashtraPrivate Sector RPGPL MIHAN TPS Steam 4 61.5 2012
+144 WR MaharashtraPrivate Sector SPPL SHIRPUR TPP Steam 1 150 2017
+WR MaharashtraPrivate Sector SPPL SHIRPUR TPP Steam 2 150 2023
+145 WR MaharashtraPrivate Sector STPL NASIK (P) TPS Steam 1 270 2014
+WR MaharashtraPrivate Sector STPL NASIK (P) TPS Steam 2 270 2017
+WR MaharashtraPrivate Sector STPL NASIK (P) TPS Steam 3 270 2017
+WR MaharashtraPrivate Sector STPL NASIK (P) TPS Steam 4 270 2017
+WR MaharashtraPrivate Sector STPL NASIK (P) TPS Steam 5 270 2017
+146 WR MaharashtraPrivate Sector TATA PCL TROMBAY CCPP GT-Gas 1 120 1993
+WR MaharashtraPrivate Sector TATA PCL TROMBAY CCPP GT-Gas 2 60 1994
+147 WR MaharashtraPrivate Sector TATA PCL TROMBAY TPS Steam 5 500 1984
+WR MaharashtraPrivate Sector TATA PCL TROMBAY TPS Steam 8 250 2009
+148 WR MaharashtraPrivate Sector VIP BUTIBORI TPP Steam 1 300 2014
+WR MaharashtraPrivate Sector VIP BUTIBORI TPP Steam 2 300 2012
+149 WR MaharashtraPrivate Sector WPCL WARDHA WARORA TPP Steam 1 135 2010
+WR MaharashtraPrivate Sector WPCL WARDHA WARORA TPP Steam 2 135 2010
+WR MaharashtraPrivate Sector WPCL WARDHA WARORA TPP Steam 3 135 2011
+WR MaharashtraPrivate Sector WPCL WARDHA WARORA TPP Steam 4 135 2011
+150 WR MaharashtraCentral Sector NTPC MAUDA TPS Steam 1 500 2012
+WR MaharashtraCentral Sector NTPC MAUDA TPS Steam 2 500 2013
+WR MaharashtraCentral Sector NTPC MAUDA TPS Steam 3 660 2016
+WR MaharashtraCentral Sector NTPC MAUDA TPS Steam 4 660 2017
+151 WR MaharashtraCentral Sector NTPC SOLAPUR STPS Steam 1 660 2017
+WR MaharashtraCentral Sector NTPC SOLAPUR STPS Steam 2 660 2019
+152 WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 1 205 1998
+WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 2 205 1998
+WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 3 230 1998
+WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 4 213 2006
+WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 5 213 2006
+WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 6 237.54 2006
+WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 7 213 2007
+WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 8 213 2007
+WR MaharashtraCentral Sector RGPPL RATNAGIRI CCPP GT-Gas 9 237.54 2007
+WR Maharashtra Total 27873.08
+94 WR Maharashtra State Sector MAHAGENCO BHIRA TAIL RACE HPS Hydro 1 40 1988
+WR Maharashtra State Sector MAHAGENCO BHIRA TAIL RACE HPS Hydro 2 40 1987
+95 WR Maharashtra State Sector MAHAGENCO GHATGHAR PSS HPS Hydro 1 125 2008
+WR Maharashtra State Sector MAHAGENCO GHATGHAR PSS HPS Hydro 2 125 2008
+96 WR Maharashtra State Sector MAHAGENCO KOYNA DPH HPS Hydro 1 18 1980
+WR Maharashtra State Sector MAHAGENCO KOYNA DPH HPS Hydro 2 18 1981
+97 WR Maharashtra State Sector MAHAGENCO KOYNA-I&II HPS Hydro 1 70 1962
+WR Maharashtra State Sector MAHAGENCO KOYNA-I&II HPS Hydro 1 80 1967
+WR Maharashtra State Sector MAHAGENCO KOYNA-I&II HPS Hydro 2 70 1962
+WR Maharashtra State Sector MAHAGENCO KOYNA-I&II HPS Hydro 2 80 1966
+WR Maharashtra State Sector MAHAGENCO KOYNA-I&II HPS Hydro 3 70 1963
+WR Maharashtra State Sector MAHAGENCO KOYNA-I&II HPS Hydro 3 80 1967
+WR Maharashtra State Sector MAHAGENCO KOYNA-I&II HPS Hydro 4 70 1963
+WR Maharashtra State Sector MAHAGENCO KOYNA-I&II HPS Hydro 4 80 1966
+98 WR Maharashtra State Sector MAHAGENCO KOYNA-III HPS Hydro 1 80 1975
+WR Maharashtra State Sector MAHAGENCO KOYNA-III HPS Hydro 2 80 1976
+WR Maharashtra State Sector MAHAGENCO KOYNA-III HPS Hydro 3 80 1977
+WR Maharashtra State Sector MAHAGENCO KOYNA-III HPS Hydro 4 80 1978
+99 WR Maharashtra State Sector MAHAGENCO KOYNA-IV HPS Hydro 1 250 2000
+WR Maharashtra State Sector MAHAGENCO KOYNA-IV HPS Hydro 2 250 2000
+WR Maharashtra State Sector MAHAGENCO KOYNA-IV HPS Hydro 3 250 1999
+WR Maharashtra State Sector MAHAGENCO KOYNA-IV HPS Hydro 4 250 1999
+100 WR Maharashtra State Sector MAHAGENCO TILLARI HPS Hydro 1 60 1986
+101 WR Maharashtra State Sector MAHAGENCO VAITARNA HPS Hydro 1 60 1976
+102 WR Maharashtra State Sector MPPGCL PENCH HPS Hydro 1 80 1986
+WR Maharashtra State Sector MPPGCL PENCH HPS Hydro 2 80 1987
+103 WR Maharashtra Private Sector DLHP BHANDARDHARA HPS ST-II Hydro 1 34 1996
+104 WR Maharashtra Private Sector TATA MAH. BHIRA HPS Hydro 1 25 1949
+WR Maharashtra Private Sector TATA MAH. BHIRA HPS Hydro 2 25 1927
+WR Maharashtra Private Sector TATA MAH. BHIRA HPS Hydro 3 25 1927
+WR Maharashtra Private Sector TATA MAH. BHIRA HPS Hydro 4 25 1927
+WR Maharashtra Private Sector TATA MAH. BHIRA HPS Hydro 5 25 1927
+WR Maharashtra Private Sector TATA MAH. BHIRA HPS Hydro 6 25 1927
+105 WR Maharashtra Private Sector TATA MAH. BHIRA PSS HPS Hydro 1 150 1995
+106 WR Maharashtra Private Sector TATA MAH. BHIVPURI HPS Hydro 1 24 1998
+WR Maharashtra Private Sector TATA MAH. BHIVPURI HPS Hydro 2 24 1998
+WR Maharashtra Private Sector TATA MAH. BHIVPURI HPS Hydro 3 24 1999
+WR Maharashtra Private Sector TATA MAH. BHIVPURI HPS Hydro 4 1.5 1997
+WR Maharashtra Private Sector TATA MAH. BHIVPURI HPS Hydro 5 1.5 1997
+107 WR Maharashtra Private Sector TATA MAH. KHOPOLI HPS Hydro 1 24 2002
+WR Maharashtra Private Sector TATA MAH. KHOPOLI HPS Hydro 2 24 2003
+WR Maharashtra Private Sector TATA MAH. KHOPOLI HPS Hydro 3 24 2001
+WR Maharashtra Total 3047
+5 WR Maharashtra Central Sector NPCIL TARAPUR Nuclear 1 160 1960
+WR Maharashtra Central Sector NPCIL TARAPUR Nuclear 2 160 1969
+WR Maharashtra Central Sector NPCIL TARAPUR Nuclear 3 540 2005
+WR Maharashtra Central Sector NPCIL TARAPUR Nuclear 4 540 2006
+WR Maharashtra Total 1400
