@@ -13,7 +13,6 @@ PWR_NPCIL_TARAPUR_U3,Power Station,TARAPUR,,,540
 PWR_NPCIL_TARAPUR_U4,Power Station,TARAPUR,,,540
 HOS_1,Hospital,Apex Kidney Care Pvt. Ltd.,,,0
 HOS_2,Hospital,Arihant Heart and Surgical Hospital,19.2240612,72.8666469,0
-HOS_3,Hospital,Banaji Eyesurgery and Laser Center,21.2022869,72.8712951,0
 HOS_4,Hospital,Bhoir Hospital,,,0
 HOS_5,Hospital,Charak Clinic Nursing Home,18.9519338,72.8189832,0
 HOS_6,Hospital,Dalvi Plus,19.046295,72.8415449,0
@@ -46,11 +45,8 @@ HOS_32,Hospital,Sanjawalas Maternity and Gynacologist,19.0963781,72.8563994,0
 HOS_33,Hospital,Sanket Hospital,,,0
 HOS_34,Hospital,Shree Arihant Eye Care Centre,19.2550851,72.8571396,0
 HOS_35,Hospital,Shreeji Hospital,19.0834108,72.9022333,0
-HOS_36,Hospital,Sonkusare Clinic,22.5023688,88.4032524,0
 HOS_37,Hospital,Surbhi Dental Clinic(Dr.Samata Dhuppad),19.0176169,72.8561288,0
 HOS_38,Hospital,Uday Pathak Hospital,19.0759837,72.8776559,0
-HOS_39,Hospital,Usha Maternity and Nursing Home,19.2107733,73.1868328,0
-HOS_40,Hospital,Yesha Onco Surgical Care,20.9467019,72.9520348,0
 HOS_41,Hospital,Shroff Eye Clinic,18.9435836,72.8228706,0
 HOS_42,Hospital,Smt. Kamladevi Gauridutt Mittal Ayurvedic Hosp,19.1055042,72.8500559,0
 HOS_43,Hospital,Dholkawalla Maternity Home,18.952263,72.8340598,0
@@ -70,7 +66,6 @@ HOS_56,Hospital,Harkissondass and Narottamdass Hospital and Research Centre,,,0
 HOS_57,Hospital,Hematology Laboratory,19.0759837,72.8776559,0
 HOS_58,Hospital,Inkus Ivf Centre,,,0
 HOS_59,Hospital,Kamla Eye Clinic,,,0
-HOS_60,Hospital,Lotus Clinic,49.0226838,12.3033548,0
 HOS_61,Hospital,Mother and Child Care Clinic,,,0
 HOS_62,Hospital,Shivneh,,,0
 HOS_63,Hospital,Sir Hurkisondas Nurrotumdas Hospital and Research Center,,,0
@@ -104,9 +99,7 @@ HOS_90,Hospital,Palshetkar Patil Nursing Home,18.9537342,72.8183134,0
 HOS_91,Hospital,Samyak Drishti Eye Centre,18.9563549,72.8133985,0
 HOS_92,Hospital,Shah Eye Clinic and Nursing Home,19.0759837,72.8776559,0
 HOS_93,Hospital,The Vascular Clinic,18.9586748,72.8110314,0
-HOS_94,Hospital,Eye Site,19.2147763,73.0864218,0
 HOS_95,Hospital,Ipc Heart Care,19.0176169,72.8561288,0
-HOS_96,Hospital,Madhura Nursing Home,19.381244,72.830237,0
 HOS_97,Hospital,Nagori Clinic And Nursing Home,18.9688538,72.8283084,0
 HOS_98,Hospital,Prathmesh General Hospital and Iccu,,,0
 HOS_99,Hospital,Sadhu-Kamal Eye Hospital,18.965987,72.818904,0
@@ -367,7 +360,6 @@ HOS_353,Hospital,Khar Clinico-Pathological Laboratory,19.074515,72.834424,0
 HOS_354,Hospital,Kumar Clinic,19.0716903,72.8341267,0
 HOS_355,Hospital,Mahavir Medical Research Center,19.0741473,72.8325682,0
 HOS_356,Hospital,Morwani Nursing Home,,,0
-HOS_357,Hospital,Nm Medical Center,33.0185039,-80.1756481,0
 HOS_358,Hospital,Ramakrishna Mission Hospital,19.0715992,72.8348232,0
 HOS_359,Hospital,Rg Stone Urology and Laproscopy Hospital - Mumbai,,,0
 HOS_360,Hospital,Tulip Womens Healthcare Centre - Khar (W),19.0689055,72.8320899,0
@@ -497,7 +489,6 @@ HOS_483,Hospital,Masrani Clinic For Women and Mimas,19.1152002,72.844139,0
 HOS_484,Hospital,Mediwavw Clinic,19.1363246,72.82766,0
 HOS_485,Hospital,Nivaran Hospital,,,0
 HOS_486,Hospital,Patil Hospital,19.1363246,72.82766,0
-HOS_487,Hospital,Prime Speciality Hospital,15.9647156,74.0035709,0
 HOS_488,Hospital,Purandare Hospital,19.1295475,72.822229,0
 HOS_489,Hospital,R.G. Scientific Enterprises Ltd,19.1366248,72.8363278,0
 HOS_490,Hospital,Roshni Eye Hospital,19.113645,72.8697339,0
@@ -631,8 +622,6 @@ HOS_617,Hospital,Pratik Hospital and Maternity Home,19.1998211,72.842594,0
 HOS_618,Hospital,Sai Sanjivani Criticare Hospital,,,0
 HOS_619,Hospital,Saibaba Hospital and Polyclinic,,,0
 HOS_620,Hospital,Shaha Children Hospital,,,0
-HOS_621,Hospital,Shri Siddhi Vinayak Orthopaedic Hospital,24.5446027,73.6956989,0
-HOS_622,Hospital,Suyash Surgiacal and Maternity Home,19.032803,73.1012153,0
 HOS_623,Hospital,Anand Nursing Home - Borivali (E),19.2240612,72.8666469,0
 HOS_624,Hospital,"Ankit Fracture, Maternity and Surgical Hospital",19.2240612,72.8666469,0
 HOS_625,Hospital,Asian Eye Institute And Laser Centre,19.2318937,72.8586904,0
@@ -680,7 +669,6 @@ HOS_666,Hospital,Jaydeep Eye and Physiotherapy Clinic - Kandivli,19.0759837,72.8
 HOS_667,Hospital,Jobanputra Nursing Home,19.206912,72.850038,0
 HOS_668,Hospital,Kanchanganga Polyclinic and Nursing H0Me,19.0759837,72.8776559,0
 HOS_669,Hospital,Khm Medical Centre Shree Kandivli Hitwardhak Mandal Kandivali,,,0
-HOS_670,Hospital,Kirti Nursing Home,30.7346267,79.0668943,0
 HOS_671,Hospital,Kshar Eye Clinic,,,0
 HOS_672,Hospital,"Matushree Maternity, Surgical and General Nursing Home",,,0
 HOS_673,Hospital,Medicenter Nursing Home,19.0759837,72.8776559,0
@@ -706,7 +694,6 @@ HOS_692,Hospital,Vinayak Nursing Home`,19.2050369,72.8389113,0
 HOS_693,Hospital,Vrindavan Nursing Home,,,0
 HOS_694,Hospital,Abhinav Sushrut Hospital,19.2540545,72.8620298,0
 HOS_695,Hospital,Akshit Maternity Home,19.2542542,72.8646698,0
-HOS_696,Hospital,Anand Maternity And Nursing Home - Mumbai,19.4945979,72.8604097,0
 HOS_697,Hospital,Arihant Eye Care Centre,,,0
 HOS_698,Hospital,Ashirwad Maternity and Nursing Home - Dahisar,19.2539332,72.8672448,0
 HOS_699,Hospital,Balaji Polyclinic and Criticare Centre,19.2406676,72.8685001,0
@@ -774,7 +761,6 @@ HOS_760,Hospital,Day Care Eye Clinic(Dr.S.V.Sharma Eye Clini),19.0825013,72.8387
 HOS_761,Hospital,Daycare Angels,19.0552812,72.8892082,0
 HOS_762,Hospital,Diamond Polyclinic and Nursing Home,19.0327996,72.8963568,0
 HOS_763,Hospital,Disha Polyclinic and Nursing Home,19.0327996,72.8963568,0
-HOS_764,Hospital,Dr (Mrs) Shubha S Rao,28.6960904,77.0764585,0
 HOS_765,Hospital,Dr Kedares Maternity and General Nursing Home,19.0604892,72.898177,0
 HOS_766,Hospital,Dr Mekhales Dhanvantari Hospital,19.0585864,72.9078832,0
 HOS_767,Hospital,Dr Smita Mukherjees Eye Clinic,19.0327996,72.8963568,0
@@ -800,7 +786,6 @@ HOS_786,Hospital,Narurkar Ent Hospital,19.0539989,72.9053186,0
 HOS_787,Hospital,Navnit Clinic (Dr. Parihar Eye and Ent,19.0327996,72.8963568,0
 HOS_788,Hospital,Neurogen Brain And Spine Institute,19.0536352,72.8851743,0
 HOS_789,Hospital,Niramaya General Hospital,19.0327996,72.8963568,0
-HOS_790,Hospital,Oma Hospital,41.127833,-81.609844,0
 HOS_791,Hospital,Patankar Hand and Limb Reconstruction Clinic,19.0327996,72.8963568,0
 HOS_792,Hospital,Rushabh Nursing Home and Eye Hospital,19.059862,72.9005605,0
 HOS_793,Hospital,Sai Kripa Childrens Hospital,18.9626907,72.8129124,0
@@ -832,7 +817,6 @@ HOS_818,Hospital,Universal Eye Clinic and Surgical Centre,,,0
 HOS_819,Hospital,Dr. L.H. Hiranandani Hospital,19.1374852,72.917394,0
 HOS_820,Hospital,Padmalaya Maternity and Surgical Home,19.1196773,72.9050809,0
 HOS_821,Hospital,Powai Polyclinic and Hospital,19.1254172,72.9170023,0
-HOS_822,Hospital,Saveshwari Hospital and Icu Multispeciality Family Healthcare,61.505723,9.7841956,0
 HOS_823,Hospital,Sri Sai Eye Care Centre,19.1196773,72.9050809,0
 HOS_824,Hospital,Aakar Ivf-Icsi Centre,19.0792247,72.9057813,0
 HOS_825,Hospital,Advanced Orthopaedic and Super Speciality Center,19.0796375,72.9070116,0
@@ -868,7 +852,6 @@ HOS_854,Hospital,Nayan Eye Centre,19.0770917,72.9080971,0
 HOS_855,Hospital,Parakh Hospital And Research Centre - Ghatkopar,19.07907,72.907976,0
 HOS_856,Hospital,Parekh Eye Clinic and Child Clinic,19.0796375,72.9070116,0
 HOS_857,Hospital,Sanghavi Laboratory,19.0792247,72.9057813,0
-HOS_858,Hospital,Saraswati Eye Hospital,22.3017014,73.2066838,0
 HOS_859,Hospital,Sushrut Hospital and Research Center,19.0552812,72.8892082,0
 HOS_860,Hospital,Tara Neo Surg Hospital,19.0796375,72.9070116,0
 HOS_861,Hospital,The Eye Super Specialities,19.0796375,72.9070116,0
@@ -1137,7 +1120,6 @@ HOS_1123,Hospital,Malad Clinical and Pathological Laboratory,19.1825133,72.85658
 HOS_1124,Hospital,Megha Surgical Hospital,,,0
 HOS_1125,Hospital,Nari Nursing Home,,,0
 HOS_1126,Hospital,Sai Krupa Hospital,,,0
-HOS_1127,Hospital,Sai Swayam MatandNur Home,25.1240603,85.4594749,0
 HOS_1128,Hospital,Sanjeevani Surgical and General Hospital,19.1825133,72.8565805,0
 HOS_1129,Hospital,Shah Eye Clinic and Microsurgery Centre,,,0
 HOS_1130,Hospital,Shraddha Orthopedic and Surgical Hospital,19.1903411,72.855971,0
@@ -1173,7 +1155,6 @@ HOS_1159,Hospital,Sanchaiti Hospital,19.2014495,72.8590491,0
 HOS_1160,Hospital,Shree Sai Hospital,,,0
 HOS_1161,Hospital,Shreeji Hospital (Kandivli),19.2009337,72.8692653,0
 HOS_1162,Hospital,Speciality Ent Hospital,,,0
-HOS_1163,Hospital,Surbhi Life Care Hospital,40.0271947,-81.5539412,0
 HOS_1164,Hospital,Vikas Diagnostic Centre,19.2139911,72.8655789,0
 HOS_1165,Hospital,Crystal Eye Center,,,0
 HOS_1166,Hospital,Dr Shah Piles Clinic,19.0759837,72.8776559,0
@@ -1181,7 +1162,6 @@ HOS_1167,Hospital,Dr Shahs Hospital,,,0
 HOS_1168,Hospital,Linkway Nursing Home and Polyclinic,19.1405116,72.8421555,0
 HOS_1169,Hospital,Mallika Hospital and Envision Eye Centre,,,0
 HOS_1170,Hospital,Mother Care Maternity And Surgical Nursing Home - Mumbai,19.1405116,72.8421555,0
-HOS_1171,Hospital,Orbit Eye Clinic,19.8231811,75.2099821,0
 HOS_1172,Hospital,Pooja Nursing Home,19.1405116,72.8421555,0
 HOS_1173,Hospital,Pratima Maternity and Surgical Nursing Home,19.1332655,72.84371,0
 HOS_1174,Hospital,Shivam Netram Eye Hospital,19.1439388,72.8430671,0
@@ -1214,7 +1194,6 @@ HOS_1200,Hospital,Bombay City Eye Institute and Research Centre,18.9629992,72.81
 HOS_1201,Hospital,The B.D.Petit Parsee General Hospital,18.9668749,72.805182,0
 HOS_1202,Hospital,"Centre For Sight, Juhu",19.1102949,72.8409693,0
 HOS_1203,Hospital,Asian Heart Institute,19.0562207,72.8537634,0
-HOS_1204,Hospital,"CGHS Dispensary No.1, C.G.O.",34.7414415,135.4058809,0
 HOS_1205,Hospital,"CGHS Dispensary No.2, Pedder Road,",,,0
 HOS_1206,Hospital,"CGHS Dispensary No.3, Worli",,,0
 HOS_1207,Hospital,"CGHS Dispensary No.4, Mahim Building",,,0
@@ -1254,7 +1233,6 @@ HOS_1240,Hospital,Godrej Memorial Hospital,19.0966611,72.9239095,0
 HOS_1241,Hospital,Holy Spirit Hospital,19.1229678,72.8641387,350
 HOS_1242,Hospital,Holy Family Hospital,,,232
 HOS_1243,Hospital,Lilavati Hospital and Research Centre,19.0515721,72.8346314,314
-HOS_1244,Hospital,Fortis Hiranandani Hospital,18.7501386,73.0420662,149
 HOS_1245,Hospital,Jaslok Hospital,18.9681978,72.8072647,364
 HOS_1246,Hospital,Kohinoor Hospital,,,0
 HOS_1247,Hospital,Fortis Hospital Mulund,19.1918191,72.8348753,300
@@ -1279,7 +1257,6 @@ HOS_1265,Hospital,Inlaks General Hospital,19.0327996,72.8963568,100
 HOS_1266,Hospital,Jaslok Hospital And Research Centre,18.9681978,72.8072647,0
 HOS_1267,Hospital,Joy Hospital Pvt Ltd,19.1095683,72.825288,0
 HOS_1268,Hospital,Jupiter Hospital,,,325
-HOS_1269,Hospital,Kapadia Multispeciality Hospital,32.2396325,77.1887145,30
 HOS_1270,Hospital,Kaushalya Medical Foundation Trust Hospital,,,100
 HOS_1271,Hospital,Kkasturi Medicare Pvt Ltd,,,50
 HOS_1272,Hospital,Kohinoor Hospitals Pvt Ltd,,,500
@@ -1293,7 +1270,6 @@ HOS_1279,Hospital,Maa Nursing Home And Netra Jyoti Eye Care Center,,,0
 HOS_1280,Hospital,Madhu Polyclinic and Nursing Home,19.200861,72.9643615,46
 HOS_1281,Hospital,Mahavir Medical Research Centre,,,52
 HOS_1282,Hospital,Nanavati Hospital,19.094854,72.839654,352
-HOS_1283,Hospital,Niramaya Holistic Health Services Pvt Ltd,19.0712143,73.0799855,0
 HOS_1284,Hospital,Nulife Hospital,19.0898792,72.908696,0
 HOS_1285,Hospital,Om Navjeevan Hospital,,,0
 HOS_1286,Hospital,Orbit Eye Hospital,19.1405116,72.8421555,0

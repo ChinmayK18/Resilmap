@@ -9,18 +9,36 @@ def main():
     risk = pd.read_csv(RISK_FILE)
     ml = pd.read_csv(ML_FILE)
 
-    # Add identifiers and descriptive information from the original risk table
-    ml["Asset_ID"] = risk["Asset_ID"]
-    ml["Asset_Type"] = risk["Asset_Type"]
-    ml["Asset_Name"] = risk["Asset_Name"]
-    ml["Latitude"] = risk["Latitude"]
-    ml["Longitude"] = risk["Longitude"]
-    ml["Hazard_Type"] = risk["Hazard_Type"]
-    ml["Risk_Score"] = risk["Risk_Score"]
-    ml["Risk_Level"] = risk["Risk_Level"]
+    # ml has one row per asset x historical event (many rows).
+    # risk has one row per asset x hazard. Aggregate ml to the same
+    # level first, then join on the keys (NOT by row position).
+    ml_agg = (
+        ml.groupby(["Asset_ID", "Hazard_Type"], as_index=False)
+        .agg(
+            Hazard_Severity=("Hazard_Severity", "max"),
+            ML_Anomaly=("ML_Anomaly", "max"),
+            ML_Anomaly_Score=("ML_Anomaly_Score", "max"),
+        )
+    )
 
-    # Final columns for downstream use
-    output = ml[
+    output = ml_agg.merge(
+        risk[
+            [
+                "Asset_ID",
+                "Hazard_Type",
+                "Asset_Type",
+                "Asset_Name",
+                "Latitude",
+                "Longitude",
+                "Risk_Score",
+                "Risk_Level",
+            ]
+        ],
+        on=["Asset_ID", "Hazard_Type"],
+        how="left",
+    )
+
+    output = output[
         [
             "Asset_ID",
             "Asset_Type",
@@ -32,7 +50,7 @@ def main():
             "Risk_Score",
             "Risk_Level",
             "ML_Anomaly",
-            "ML_Anomaly_Score"
+            "ML_Anomaly_Score",
         ]
     ]
 
@@ -40,7 +58,8 @@ def main():
 
     print("Final ML output generated successfully.")
     print(f"Rows: {len(output)}")
-    print(f"ML anomalies: {output['ML_Anomaly'].sum()}")
+    print(f"Rows with no risk match: {int(output['Risk_Score'].isna().sum())}")
+    print(f"ML anomalies: {int(output['ML_Anomaly'].sum())}")
     print(f"Saved to: {OUTPUT_FILE}")
 
 

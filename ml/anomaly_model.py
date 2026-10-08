@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 
 from sklearn.ensemble import IsolationForest
@@ -157,18 +158,10 @@ def main():
     # 8. Identify anomalies
     # ---------------------------------------------------------
 
-    threshold = (
-        train_df.shape[0] * 0.05
-    )
-
-    anomaly_cutoff = (
-        train_df.assign(
-            score=df.loc[
-                train_df.index,
-                "ML_Anomaly_Score"
-            ]
-        )["score"].quantile(0.95)
-    )
+    # Cutoff is the 95th percentile of the scores of the rows the model
+    # was actually trained on (train_df), matching contamination=0.05.
+    train_scores = -model.score_samples(X_train_scaled)
+    anomaly_cutoff = np.quantile(train_scores, 0.95)
 
     df["ML_Anomaly"] = (
         df["ML_Anomaly_Score"] >= anomaly_cutoff
