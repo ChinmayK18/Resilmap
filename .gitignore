@@ -15,3 +15,7 @@ dist/
 # OS files
 .DS_Store
 Thumbs.db
+
+# OpenCode local configuration
+opencode.json
+AGENTS.md
