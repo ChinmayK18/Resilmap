@@ -1,119 +1,119 @@
-Substation_Name,Hospital_Name,Distance_km,Dependency_Strength,Asset_Name,Risk_Score,Risk_Level,Cascade_Impact,Failed_Substation,Hazard_Type,Cascade_Severity
-220kV BORIVALI,Arihant Heart and Surgical Hospital,1.81,1.0,Arihant Heart and Surgical Hospital,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Anand Nursing Home - Borivali (E),1.81,1.0,Anand Nursing Home - Borivali (E),57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Crystal Hospitals,1.81,1.0,Crystal Hospitals,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,"Ankit Fracture, Maternity and Surgical Hospital",1.81,1.0,"Ankit Fracture, Maternity and Surgical Hospital",57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Riddhi Eye Clinic,1.81,1.0,Riddhi Eye Clinic,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Ratika Hospital and Research Centre,1.81,1.0,Ratika Hospital and Research Centre,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Robindra Nursing Home,1.81,1.0,Robindra Nursing Home,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Qualitas Diagnostics Center,1.81,1.0,Qualitas Diagnostics Center,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shri K V O Jain Manav Seva Kendra Navneet Hospital,1.81,1.0,Shri K V O Jain Manav Seva Kendra Navneet Hospital,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shivam Eye Care Centre,1.81,1.0,Shivam Eye Care Centre,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Paramount Ganpati Health Care - Kandivali,0.798,1.0,Paramount Ganpati Health Care - Kandivali,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shreeji Hospital (Kandivli),1.921,1.0,Shreeji Hospital (Kandivli),57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,New Life Nursing Home,1.88,1.0,New Life Nursing Home,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Vikas Diagnostic Centre,1.578,1.0,Vikas Diagnostic Centre,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,"Omm Sai Nursing Home - Kandivali, Mumbai",0.798,1.0,"Omm Sai Nursing Home - Kandivali, Mumbai",57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Aditi Hospital,1.779,1.0,Aditi Hospital,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Gokul Hospital,1.814,1.0,Gokul Hospital,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Aditi Hospital,1.779,1.0,Aditi Hospital,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Gokul Hospital,1.814,1.0,Gokul Hospital,57.75,High,57.75,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Eye Smile Clinic,4.648,0.7,Eye Smile Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Jay Polyclinic Surgical and Maternity Nursing Home and Iccu,4.952,0.7,Jay Polyclinic Surgical and Maternity Nursing Home and Iccu,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shreeji Hospital,2.093,0.7,Shreeji Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Mohit Hospital and Heart Centre,2.764,0.7,Mohit Hospital and Heart Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,"Dr Parikhs Maternity, Gynaec, and General Hospital",2.606,0.7,"Dr Parikhs Maternity, Gynaec, and General Hospital",57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Asian Eye Institute And Laser Centre,3.005,0.7,Asian Eye Institute And Laser Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dhanshri Hospital,2.875,0.7,Dhanshri Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Pratik Hospital and Maternity Home,4.312,0.7,Pratik Hospital and Maternity Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Puranik Hospital,4.743,0.7,Puranik Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Parmar Hospital,2.613,0.7,Parmar Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Navjeevan Global Heart Centre,2.332,0.7,Navjeevan Global Heart Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Purnima Hospital,3.183,0.7,Purnima Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Nirmay Mother Care Centre,4.036,0.7,Nirmay Mother Care Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Parijat Child Health Clinic,4.643,0.7,Parijat Child Health Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Roshni Eye Clinic,2.668,0.7,Roshni Eye Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shree Krishna Hospital,4.585,0.7,Shree Krishna Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Utkarsh Nursing Home,2.765,0.7,Utkarsh Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Akshar Eye Clinic,4.312,0.7,Akshar Eye Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Bhatia Maternity and Ivf Centre,4.386,0.7,Bhatia Maternity and Ivf Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr. Vora`S Premature Critical Care and General Hospital,4.083,0.7,Dr. Vora`S Premature Critical Care and General Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Grace Maternity and Nursing Home - Kandivli (W),4.511,0.7,Grace Maternity and Nursing Home - Kandivli (W),57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Jobanputra Nursing Home,3.318,0.7,Jobanputra Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Nidhi Nursing Home and Iccu,4.198,0.7,Nidhi Nursing Home and Iccu,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Paarth Hospital,4.312,0.7,Paarth Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Panorama Eye Clinic Superspeciality Eye Care,3.9,0.7,Panorama Eye Clinic Superspeciality Eye Care,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Sai Vilayatrai Charitable Polyclinc,4.025,0.7,Sai Vilayatrai Charitable Polyclinc,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Manish Nursing Home,4.793,0.7,Manish Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Surana Hospital And Research Centre,4.386,0.7,Surana Hospital And Research Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Saraogi Maternity and General Hospital,4.553,0.7,Saraogi Maternity and General Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shreeji Hospital,2.093,0.7,Shreeji Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Surya Eye Clinic,4.843,0.7,Surya Eye Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Neelam Nursing Home (Lenest) - Malad (W),3.004,0.7,Neelam Nursing Home (Lenest) - Malad (W),57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Ear-Nose-Throat And Eye Clinic,4.638,0.7,Ear-Nose-Throat And Eye Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Chhaya Surgical Home,4.703,0.7,Chhaya Surgical Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Mauli Hospital,4.603,0.7,Mauli Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Balaji Polyclinic and Criticare Centre,3.175,0.7,Balaji Polyclinic and Criticare Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Ashirwad Maternity and Nursing Home - Dahisar,4.603,0.7,Ashirwad Maternity and Nursing Home - Dahisar,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Akshit Maternity Home,4.726,0.7,Akshit Maternity Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Abhinav Sushrut Hospital,4.811,0.7,Abhinav Sushrut Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Vinayak Nursing Home`,4.502,0.7,Vinayak Nursing Home`,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Sumangal Hospital,4.312,0.7,Sumangal Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shree Krishna Hospital - Kandivali,4.532,0.7,Shree Krishna Hospital - Kandivali,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shah Surgical Hospital and Maternity Home P. Ltd.,3.491,0.7,Shah Surgical Hospital and Maternity Home P. Ltd.,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Saraswati Hospital(Kandivali),4.312,0.7,Saraswati Hospital(Kandivali),57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr Ajay Shah Pathology,4.603,0.7,Dr Ajay Shah Pathology,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr Worlikar's Shree Surgical and General Nursing Home,4.603,0.7,Dr Worlikar's Shree Surgical and General Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr Mandar Pandit Clinic,4.925,0.7,Dr Mandar Pandit Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr.Nikams Eye Care And Laser Centre,4.739,0.7,Dr.Nikams Eye Care And Laser Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Jai Ambe Poly Clinic Nursing Home and Maternity Hosp,4.603,0.7,Jai Ambe Poly Clinic Nursing Home and Maternity Hosp,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Kk Maternity And General Hospital,4.136,0.7,Kk Maternity And General Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr. M. L Dhawale Memorial Trust,4.615,0.7,Dr. M. L Dhawale Memorial Trust,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Vishwanath Hospital,3.513,0.7,Vishwanath Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,M.M.Hospital,4.585,0.7,M.M.Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr. R.J. Ganatra's Nursing Home,3.723,0.7,Dr. R.J. Ganatra's Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shraddha Hospital,4.603,0.7,Shraddha Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Bhargav Medical Centre,4.041,0.7,Bhargav Medical Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr. Abhijit Mahadeo Valanju,4.969,0.7,Dr. Abhijit Mahadeo Valanju,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Rajendra Maternity and Surgical Nursing Home,4.541,0.7,Rajendra Maternity and Surgical Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,"Life Line Hospital - Dahisar,Mumbai",4.603,0.7,"Life Line Hospital - Dahisar,Mumbai",57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Namitha Polyclinic and Hospital,4.603,0.7,Namitha Polyclinic and Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Navdurga Fracture And Accident Centre,4.603,0.7,Navdurga Fracture And Accident Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Navneet Hi-Tech,4.603,0.7,Navneet Hi-Tech,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Rohit Nursing Home - Dahisar,4.482,0.7,Rohit Nursing Home - Dahisar,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Sanghavi Eye and Diabetes Care Center,4.603,0.7,Sanghavi Eye and Diabetes Care Center,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Total Woman Medical Centre - Dahisar,3.605,0.7,Total Woman Medical Centre - Dahisar,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Vdurga Fracture And Accident Centre,4.603,0.7,Vdurga Fracture And Accident Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Vijay Polyclinic and Care Centre,4.603,0.7,Vijay Polyclinic and Care Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Raj Jyoti Hospital,4.563,0.7,Raj Jyoti Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Patel Nursing Home,3.018,0.7,Patel Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Niramay Mother-Care Centre (Maternity and Surgical),4.336,0.7,Niramay Mother-Care Centre (Maternity and Surgical),57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Nanda Nursing Home-Borivli,3.723,0.7,Nanda Nursing Home-Borivli,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Lancelot Dialysis Unit,3.016,0.7,Lancelot Dialysis Unit,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Dr. Alok Shahs Iccu and Nursing Home,3.723,0.7,Dr. Alok Shahs Iccu and Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Bhagat Nursing Home,3.114,0.7,Bhagat Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Anand Medical Centre,2.981,0.7,Anand Medical Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Aastha Eye Clinic,4.771,0.7,Aastha Eye Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Renuka Children Clinic and Medicare Centre,4.827,0.7,Renuka Children Clinic and Medicare Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Sanghvi Maternity and Surgical Hospital,3.433,0.7,Sanghvi Maternity and Surgical Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Rose Petal Nursing Home,3.463,0.7,Rose Petal Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shah Surgical And Maternity Nursing Home,3.013,0.7,Shah Surgical And Maternity Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shivani Medical Centre,3.896,0.7,Shivani Medical Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shree Borivli Gujarati Seva Mandal,3.281,0.7,Shree Borivli Gujarati Seva Mandal,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Seth Ent and Eye Clinic,4.786,0.7,Seth Ent and Eye Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Suchak Hospital,4.29,0.7,Suchak Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Shraddha Orthopedic and Surgical Hospital,3.729,0.7,Shraddha Orthopedic and Surgical Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Sanjeevani Surgical and General Hospital,4.36,0.7,Sanjeevani Surgical and General Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Malad Clinical and Pathological Laboratory,4.36,0.7,Malad Clinical and Pathological Laboratory,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Krishna Eye Care Centre,4.484,0.7,Krishna Eye Care Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Devangi Hospital,4.46,0.7,Devangi Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Agrawal Clinic,3.767,0.7,Agrawal Clinic,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Vinit Eye Clinic Retina And Laser Centre,3.814,0.7,Vinit Eye Clinic Retina And Laser Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Vasudhan Cosmetic Plastic Surgery Centre,3.016,0.7,Vasudhan Cosmetic Plastic Surgery Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Saibaba Maternity and Nursing Home,2.876,0.7,Saibaba Maternity and Nursing Home,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Medha Maternity and Nursing Home - Kandivali (E) Mumbai,2.161,0.7,Medha Maternity and Nursing Home - Kandivali (E) Mumbai,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Laxmi Clinic - Kandivli - (Mumbai),2.653,0.7,Laxmi Clinic - Kandivli - (Mumbai),57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Sanchaiti Hospital,2.688,0.7,Sanchaiti Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Ameya Orthopaedic Centre,3.723,0.7,Ameya Orthopaedic Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Sohum Eyecare and Oculoplasty Centre,4.703,0.7,Sohum Eyecare and Oculoplasty Centre,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
-220kV BORIVALI,Lifeline Hospital,4.246,0.7,Lifeline Hospital,57.75,High,40.42,220kV BORIVALI,Geomagnetic,43.21
+Substation_Name,Hospital_Name,Distance_km,Dependency_Strength,Asset_ID,Asset_Name,Event_Date,Hazard_Type,Hazard_Severity,AI_Event_Risk,AI_Risk_Level,Cascade_Impact,Failed_Substation,Scenario_Hazard,Scenario_Event_Date,Cascade_Severity
+220kV BORIVALI,Aditi Hospital,1.779,1.0,HOS_1112,Aditi Hospital,2024-05-11,Geomagnetic,100.0,74.66857491559136,High,74.67,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,"Omm Sai Nursing Home - Kandivali, Mumbai",0.798,1.0,HOS_1155,"Omm Sai Nursing Home - Kandivali, Mumbai",2024-05-11,Geomagnetic,100.0,71.72159057958302,High,71.72,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Paramount Ganpati Health Care - Kandivali,0.798,1.0,HOS_1157,Paramount Ganpati Health Care - Kandivali,2024-05-11,Geomagnetic,100.0,71.72159057958302,High,71.72,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Crystal Hospitals,1.81,1.0,HOS_626,Crystal Hospitals,2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Arihant Heart and Surgical Hospital,1.81,1.0,HOS_2,Arihant Heart and Surgical Hospital,2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Anand Nursing Home - Borivali (E),1.81,1.0,HOS_623,Anand Nursing Home - Borivali (E),2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Robindra Nursing Home,1.81,1.0,HOS_643,Robindra Nursing Home,2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Qualitas Diagnostics Center,1.81,1.0,HOS_639,Qualitas Diagnostics Center,2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shri K V O Jain Manav Seva Kendra Navneet Hospital,1.81,1.0,HOS_648,Shri K V O Jain Manav Seva Kendra Navneet Hospital,2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shivam Eye Care Centre,1.81,1.0,HOS_646,Shivam Eye Care Centre,2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Riddhi Eye Clinic,1.81,1.0,HOS_642,Riddhi Eye Clinic,2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,"Ankit Fracture, Maternity and Surgical Hospital",1.81,1.0,HOS_624,"Ankit Fracture, Maternity and Surgical Hospital",2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Ratika Hospital and Research Centre,1.81,1.0,HOS_641,Ratika Hospital and Research Centre,2024-05-11,Geomagnetic,100.0,71.58974295217088,High,71.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Vikas Diagnostic Centre,1.578,1.0,HOS_1164,Vikas Diagnostic Centre,2024-05-11,Geomagnetic,100.0,71.33826098555544,High,71.34,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Aditi Hospital,1.779,1.0,HOS_1234,Aditi Hospital,2024-05-11,Geomagnetic,100.0,71.22445749655455,High,71.22,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Gokul Hospital,1.814,1.0,HOS_1261,Gokul Hospital,2024-05-11,Geomagnetic,100.0,71.02939576302303,High,71.03,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,New Life Nursing Home,1.88,1.0,HOS_1152,New Life Nursing Home,2024-05-11,Geomagnetic,100.0,71.02522329805913,High,71.03,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shreeji Hospital (Kandivli),1.921,1.0,HOS_1161,Shreeji Hospital (Kandivli),2024-05-11,Geomagnetic,100.0,70.81397598996004,High,70.81,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Gokul Hospital,1.814,1.0,HOS_102,Gokul Hospital,2024-05-11,Geomagnetic,100.0,68.47807745083992,High,68.48,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Parijat Child Health Clinic,4.643,0.7,HOS_636,Parijat Child Health Clinic,2024-05-11,Geomagnetic,100.0,73.57972763892732,High,51.51,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr. Abhijit Mahadeo Valanju,4.969,0.7,HOS_1042,Dr. Abhijit Mahadeo Valanju,2024-05-11,Geomagnetic,100.0,73.11223797893794,High,51.18,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr Mandar Pandit Clinic,4.925,0.7,HOS_701,Dr Mandar Pandit Clinic,2024-05-11,Geomagnetic,100.0,73.07960784898457,High,51.16,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr Ajay Shah Pathology,4.603,0.7,HOS_700,Dr Ajay Shah Pathology,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Navdurga Fracture And Accident Centre,4.603,0.7,HOS_709,Navdurga Fracture And Accident Centre,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Navneet Hi-Tech,4.603,0.7,HOS_711,Navneet Hi-Tech,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,"Life Line Hospital - Dahisar,Mumbai",4.603,0.7,HOS_707,"Life Line Hospital - Dahisar,Mumbai",2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr Worlikar's Shree Surgical and General Nursing Home,4.603,0.7,HOS_702,Dr Worlikar's Shree Surgical and General Nursing Home,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Ashirwad Maternity and Nursing Home - Dahisar,4.603,0.7,HOS_698,Ashirwad Maternity and Nursing Home - Dahisar,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Chhaya Surgical Home,4.703,0.7,HOS_49,Chhaya Surgical Home,2024-05-11,Geomagnetic,100.0,73.03783052872087,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Mauli Hospital,4.603,0.7,HOS_22,Mauli Hospital,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Namitha Polyclinic and Hospital,4.603,0.7,HOS_708,Namitha Polyclinic and Hospital,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Sohum Eyecare and Oculoplasty Centre,4.703,0.7,HOS_1178,Sohum Eyecare and Oculoplasty Centre,2024-05-11,Geomagnetic,100.0,73.03783052872087,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Jai Ambe Poly Clinic Nursing Home and Maternity Hosp,4.603,0.7,HOS_705,Jai Ambe Poly Clinic Nursing Home and Maternity Hosp,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shraddha Hospital,4.603,0.7,HOS_1031,Shraddha Hospital,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Vdurga Fracture And Accident Centre,4.603,0.7,HOS_718,Vdurga Fracture And Accident Centre,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Sanghavi Eye and Diabetes Care Center,4.603,0.7,HOS_713,Sanghavi Eye and Diabetes Care Center,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Vijay Polyclinic and Care Centre,4.603,0.7,HOS_719,Vijay Polyclinic and Care Centre,2024-05-11,Geomagnetic,100.0,73.03960240103567,High,51.13,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr.Nikams Eye Care And Laser Centre,4.739,0.7,HOS_704,Dr.Nikams Eye Care And Laser Centre,2024-05-11,Geomagnetic,100.0,73.02858309782808,High,51.12,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Akshit Maternity Home,4.726,0.7,HOS_695,Akshit Maternity Home,2024-05-11,Geomagnetic,100.0,72.99981897026768,High,51.1,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Seth Ent and Eye Clinic,4.786,0.7,HOS_1088,Seth Ent and Eye Clinic,2024-05-11,Geomagnetic,100.0,72.96691713477826,High,51.08,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Renuka Children Clinic and Medicare Centre,4.827,0.7,HOS_1082,Renuka Children Clinic and Medicare Centre,2024-05-11,Geomagnetic,100.0,72.95771305268543,High,51.07,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr. M. L Dhawale Memorial Trust,4.615,0.7,HOS_703,Dr. M. L Dhawale Memorial Trust,2024-05-11,Geomagnetic,100.0,72.96418258955401,High,51.07,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Abhinav Sushrut Hospital,4.811,0.7,HOS_694,Abhinav Sushrut Hospital,2024-05-11,Geomagnetic,100.0,72.94302280383194,High,51.06,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Rohit Nursing Home - Dahisar,4.482,0.7,HOS_712,Rohit Nursing Home - Dahisar,2024-05-11,Geomagnetic,100.0,72.89126015789121,High,51.02,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Rajendra Maternity and Surgical Nursing Home,4.541,0.7,HOS_1045,Rajendra Maternity and Surgical Nursing Home,2024-05-11,Geomagnetic,100.0,72.79196391820585,High,50.95,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Kk Maternity And General Hospital,4.136,0.7,HOS_706,Kk Maternity And General Hospital,2024-05-11,Geomagnetic,100.0,72.76897098396034,High,50.94,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Total Woman Medical Centre - Dahisar,3.605,0.7,HOS_717,Total Woman Medical Centre - Dahisar,2024-05-11,Geomagnetic,100.0,72.70517931898527,High,50.89,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,M.M.Hospital,4.585,0.7,HOS_728,M.M.Hospital,2024-05-11,Geomagnetic,100.0,72.68271214544737,High,50.88,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shree Krishna Hospital,4.585,0.7,HOS_647,Shree Krishna Hospital,2024-05-11,Geomagnetic,100.0,72.68271214544737,High,50.88,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Balaji Polyclinic and Criticare Centre,3.175,0.7,HOS_699,Balaji Polyclinic and Criticare Centre,2024-05-11,Geomagnetic,100.0,72.68397490421276,High,50.88,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Vishwanath Hospital,3.513,0.7,HOS_720,Vishwanath Hospital,2024-05-11,Geomagnetic,100.0,72.6629523408301,High,50.86,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Nanda Nursing Home-Borivli,3.723,0.7,HOS_1071,Nanda Nursing Home-Borivli,2024-05-11,Geomagnetic,100.0,72.5316698395836,High,50.77,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr. Alok Shahs Iccu and Nursing Home,3.723,0.7,HOS_1062,Dr. Alok Shahs Iccu and Nursing Home,2024-05-11,Geomagnetic,100.0,72.5316698395836,High,50.77,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr. R.J. Ganatra's Nursing Home,3.723,0.7,HOS_921,Dr. R.J. Ganatra's Nursing Home,2024-05-11,Geomagnetic,100.0,72.5316698395836,High,50.77,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Ameya Orthopaedic Centre,3.723,0.7,HOS_1175,Ameya Orthopaedic Centre,2024-05-11,Geomagnetic,100.0,72.5316698395836,High,50.77,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Aastha Eye Clinic,4.771,0.7,HOS_1047,Aastha Eye Clinic,2024-05-11,Geomagnetic,100.0,72.45029917964276,High,50.72,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Raj Jyoti Hospital,4.563,0.7,HOS_1080,Raj Jyoti Hospital,2024-05-11,Geomagnetic,100.0,72.32642528145736,High,50.63,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Purnima Hospital,3.183,0.7,HOS_638,Purnima Hospital,2024-05-11,Geomagnetic,100.0,72.17633539916794,High,50.52,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Bhagat Nursing Home,3.114,0.7,HOS_1057,Bhagat Nursing Home,2024-05-11,Geomagnetic,100.0,72.17633539916794,High,50.52,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Bhargav Medical Centre,4.041,0.7,HOS_1041,Bhargav Medical Centre,2024-05-11,Geomagnetic,100.0,72.12620492311305,High,50.49,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Mohit Hospital and Heart Centre,2.764,0.7,HOS_630,Mohit Hospital and Heart Centre,2024-05-11,Geomagnetic,100.0,72.08953589900823,High,50.46,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Rose Petal Nursing Home,3.463,0.7,HOS_1084,Rose Petal Nursing Home,2024-05-11,Geomagnetic,100.0,72.07041965348631,High,50.45,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Patel Nursing Home,3.018,0.7,HOS_1078,Patel Nursing Home,2024-05-11,Geomagnetic,100.0,72.03586945968333,High,50.43,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shree Borivli Gujarati Seva Mandal,3.281,0.7,HOS_1091,Shree Borivli Gujarati Seva Mandal,2024-05-11,Geomagnetic,100.0,72.02558472343969,High,50.42,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Neelam Nursing Home (Lenest) - Malad (W),3.004,0.7,HOS_583,Neelam Nursing Home (Lenest) - Malad (W),2024-05-11,Geomagnetic,100.0,72.01592333434567,High,50.41,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Vinit Eye Clinic Retina And Laser Centre,3.814,0.7,HOS_1100,Vinit Eye Clinic Retina And Laser Centre,2024-05-11,Geomagnetic,100.0,71.99700616783323,High,50.4,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shivani Medical Centre,3.896,0.7,HOS_1090,Shivani Medical Centre,2024-05-11,Geomagnetic,100.0,71.99058518946767,High,50.39,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Nirmay Mother Care Centre,4.036,0.7,HOS_635,Nirmay Mother Care Centre,2024-05-11,Geomagnetic,100.0,71.96390745312229,High,50.37,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Asian Eye Institute And Laser Centre,3.005,0.7,HOS_625,Asian Eye Institute And Laser Centre,2024-05-11,Geomagnetic,100.0,71.91930371112025,High,50.34,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Anand Medical Centre,2.981,0.7,HOS_1049,Anand Medical Centre,2024-05-11,Geomagnetic,100.0,71.88023899686644,High,50.32,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dhanshri Hospital,2.875,0.7,HOS_608,Dhanshri Hospital,2024-05-11,Geomagnetic,100.0,71.88585640344832,High,50.32,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Niramay Mother-Care Centre (Maternity and Surgical),4.336,0.7,HOS_1074,Niramay Mother-Care Centre (Maternity and Surgical),2024-05-11,Geomagnetic,100.0,71.87086363797677,High,50.31,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Utkarsh Nursing Home,2.765,0.7,HOS_650,Utkarsh Nursing Home,2024-05-11,Geomagnetic,100.0,71.81310231836079,High,50.27,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Roshni Eye Clinic,2.668,0.7,HOS_644,Roshni Eye Clinic,2024-05-11,Geomagnetic,100.0,71.79861397516787,High,50.26,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Parmar Hospital,2.613,0.7,HOS_637,Parmar Hospital,2024-05-11,Geomagnetic,100.0,71.76911005920729,High,50.24,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,"Dr Parikhs Maternity, Gynaec, and General Hospital",2.606,0.7,HOS_627,"Dr Parikhs Maternity, Gynaec, and General Hospital",2024-05-11,Geomagnetic,100.0,71.75879680364332,High,50.23,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Navjeevan Global Heart Centre,2.332,0.7,HOS_634,Navjeevan Global Heart Centre,2024-05-11,Geomagnetic,100.0,71.6365197093931,High,50.15,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shah Surgical And Maternity Nursing Home,3.013,0.7,HOS_1089,Shah Surgical And Maternity Nursing Home,2024-05-11,Geomagnetic,100.0,71.62298869971113,High,50.14,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Grace Maternity and Nursing Home - Kandivli (W),4.511,0.7,HOS_662,Grace Maternity and Nursing Home - Kandivli (W),2024-05-11,Geomagnetic,100.0,71.59745029144054,High,50.12,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Lancelot Dialysis Unit,3.016,0.7,HOS_1069,Lancelot Dialysis Unit,2024-05-11,Geomagnetic,100.0,71.5688377714073,High,50.1,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Vasudhan Cosmetic Plastic Surgery Centre,3.016,0.7,HOS_1098,Vasudhan Cosmetic Plastic Surgery Centre,2024-05-11,Geomagnetic,100.0,71.5688377714073,High,50.1,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Sanghvi Maternity and Surgical Hospital,3.433,0.7,HOS_1087,Sanghvi Maternity and Surgical Hospital,2024-05-11,Geomagnetic,100.0,71.53079025169865,High,50.07,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Vinayak Nursing Home`,4.502,0.7,HOS_692,Vinayak Nursing Home`,2024-05-11,Geomagnetic,100.0,71.50086276939375,High,50.05,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Dr. Vora`S Premature Critical Care and General Hospital,4.083,0.7,HOS_659,Dr. Vora`S Premature Critical Care and General Hospital,2024-05-11,Geomagnetic,100.0,71.49216914720014,High,50.04,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Nidhi Nursing Home and Iccu,4.198,0.7,HOS_676,Nidhi Nursing Home and Iccu,2024-05-11,Geomagnetic,100.0,71.43359012924292,High,50.0,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Panorama Eye Clinic Superspeciality Eye Care,3.9,0.7,HOS_678,Panorama Eye Clinic Superspeciality Eye Care,2024-05-11,Geomagnetic,100.0,71.34034633991331,High,49.94,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Jobanputra Nursing Home,3.318,0.7,HOS_667,Jobanputra Nursing Home,2024-05-11,Geomagnetic,100.0,71.19318369079767,High,49.84,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Medha Maternity and Nursing Home - Kandivali (E) Mumbai,2.161,0.7,HOS_1151,Medha Maternity and Nursing Home - Kandivali (E) Mumbai,2024-05-11,Geomagnetic,100.0,71.1529783333016,High,49.81,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shreeji Hospital,2.093,0.7,HOS_389,Shreeji Hospital,2024-05-11,Geomagnetic,100.0,71.14655848226829,High,49.8,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Sumangal Hospital,4.312,0.7,HOS_690,Sumangal Hospital,2024-05-11,Geomagnetic,100.0,71.1083457590986,High,49.78,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Pratik Hospital and Maternity Home,4.312,0.7,HOS_617,Pratik Hospital and Maternity Home,2024-05-11,Geomagnetic,100.0,71.1083457590986,High,49.78,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Saraswati Hospital(Kandivali),4.312,0.7,HOS_684,Saraswati Hospital(Kandivali),2024-05-11,Geomagnetic,100.0,71.1083457590986,High,49.78,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Akshar Eye Clinic,4.312,0.7,HOS_652,Akshar Eye Clinic,2024-05-11,Geomagnetic,100.0,71.1083457590986,High,49.78,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Paarth Hospital,4.312,0.7,HOS_677,Paarth Hospital,2024-05-11,Geomagnetic,100.0,71.1083457590986,High,49.78,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Sai Vilayatrai Charitable Polyclinc,4.025,0.7,HOS_683,Sai Vilayatrai Charitable Polyclinc,2024-05-11,Geomagnetic,100.0,71.05217136045218,High,49.74,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Surana Hospital And Research Centre,4.386,0.7,HOS_600,Surana Hospital And Research Centre,2024-05-11,Geomagnetic,100.0,71.04140403521423,High,49.73,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Bhatia Maternity and Ivf Centre,4.386,0.7,HOS_656,Bhatia Maternity and Ivf Centre,2024-05-11,Geomagnetic,100.0,71.04140403521423,High,49.73,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shah Surgical Hospital and Maternity Home P. Ltd.,3.491,0.7,HOS_685,Shah Surgical Hospital and Maternity Home P. Ltd.,2024-05-11,Geomagnetic,100.0,71.01433547299759,High,49.71,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shree Krishna Hospital - Kandivali,4.532,0.7,HOS_688,Shree Krishna Hospital - Kandivali,2024-05-11,Geomagnetic,100.0,70.92861775593464,High,49.65,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Saibaba Maternity and Nursing Home,2.876,0.7,HOS_1158,Saibaba Maternity and Nursing Home,2024-05-11,Geomagnetic,100.0,70.89156816933132,High,49.62,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Lifeline Hospital,4.246,0.7,HOS_1277,Lifeline Hospital,2024-05-11,Geomagnetic,100.0,70.84867351192162,High,49.59,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Sanchaiti Hospital,2.688,0.7,HOS_1159,Sanchaiti Hospital,2024-05-11,Geomagnetic,100.0,70.7911536075478,High,49.55,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Laxmi Clinic - Kandivli - (Mumbai),2.653,0.7,HOS_1150,Laxmi Clinic - Kandivli - (Mumbai),2024-05-11,Geomagnetic,100.0,70.78146010785717,High,49.55,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Puranik Hospital,4.743,0.7,HOS_587,Puranik Hospital,2024-05-11,Geomagnetic,100.0,70.62828994537769,High,49.44,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shraddha Orthopedic and Surgical Hospital,3.729,0.7,HOS_1130,Shraddha Orthopedic and Surgical Hospital,2024-05-11,Geomagnetic,100.0,70.58938898570813,High,49.41,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Saraogi Maternity and General Hospital,4.553,0.7,HOS_593,Saraogi Maternity and General Hospital,2024-05-11,Geomagnetic,100.0,70.56334984421994,High,49.39,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Suchak Hospital,4.29,0.7,HOS_1132,Suchak Hospital,2024-05-11,Geomagnetic,100.0,70.46018893017266,High,49.32,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Agrawal Clinic,3.767,0.7,HOS_1113,Agrawal Clinic,2024-05-11,Geomagnetic,100.0,70.4173274169111,High,49.29,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Manish Nursing Home,4.793,0.7,HOS_580,Manish Nursing Home,2024-05-11,Geomagnetic,100.0,70.3586317554539,High,49.25,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Jay Polyclinic Surgical and Maternity Nursing Home and Iccu,4.952,0.7,HOS_574,Jay Polyclinic Surgical and Maternity Nursing Home and Iccu,2024-05-11,Geomagnetic,100.0,70.1715903279966,High,49.12,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Krishna Eye Care Centre,4.484,0.7,HOS_1122,Krishna Eye Care Centre,2024-05-11,Geomagnetic,100.0,70.15118629544911,High,49.11,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Sanjeevani Surgical and General Hospital,4.36,0.7,HOS_1128,Sanjeevani Surgical and General Hospital,2024-05-11,Geomagnetic,100.0,69.99718695942613,High,49.0,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Malad Clinical and Pathological Laboratory,4.36,0.7,HOS_1123,Malad Clinical and Pathological Laboratory,2024-05-11,Geomagnetic,100.0,69.99718695942613,High,49.0,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Ear-Nose-Throat And Eye Clinic,4.638,0.7,HOS_567,Ear-Nose-Throat And Eye Clinic,2024-05-11,Geomagnetic,100.0,69.88108694121166,High,48.92,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Eye Smile Clinic,4.648,0.7,HOS_539,Eye Smile Clinic,2024-05-11,Geomagnetic,100.0,69.83169103188479,High,48.88,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Devangi Hospital,4.46,0.7,HOS_1118,Devangi Hospital,2024-05-11,Geomagnetic,100.0,69.76142028656847,High,48.83,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Surya Eye Clinic,4.843,0.7,HOS_545,Surya Eye Clinic,2024-05-11,Geomagnetic,100.0,69.33612099278335,High,48.54,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
+220kV BORIVALI,Shreeji Hospital,2.093,0.7,HOS_35,Shreeji Hospital,2024-05-11,Geomagnetic,100.0,69.26181392669105,High,48.48,220kV BORIVALI,Geomagnetic,2024-05-11,53.69
