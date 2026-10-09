@@ -2,9 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import { getCascadeSubstations, postCascadeRun } from '../../services/api.js';
 import { hazards } from '../../utils/hazards.js';
 
+// These are known-valid dates from verified project data, not necessarily the complete history.
 const eventDatesByHazard = {
   Heat: ['2015-03', '2016-03', '2017-03', '2017-04', '2018-03', '2018-04', '2019-03', '2019-04', '2020-04', '2021-03', '2022-04', '2023-04', '2024-04', '2025-04'],
   Flood: ['2026-09-07', '2026-09-13', '2026-09-14', '2026-09-15', '2026-09-16'],
+  Geomagnetic: ['2024-05-11'],
 };
 const defaultEventDateByHazard = {
   Heat: '2015-03',
@@ -13,10 +15,17 @@ const defaultEventDateByHazard = {
 };
 
 function isEventDateValid(hazardType, eventDate) {
-  if (!eventDate) return false;
-  if (hazardType === 'Heat') return eventDatesByHazard.Heat.includes(eventDate);
-  if (hazardType === 'Flood') return eventDatesByHazard.Flood.includes(eventDate);
-  return hazardType === 'Geomagnetic' && /^\d{4}-\d{2}-\d{2}$/.test(eventDate);
+  return eventDatesByHazard[hazardType]?.includes(eventDate) ?? false;
+}
+
+function formatEventDateLabel(hazardType, eventDate) {
+  if (hazardType !== 'Geomagnetic') return eventDate;
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(`${eventDate}T00:00:00Z`));
 }
 
 function formatNumber(value, digits = 2) {
@@ -158,7 +167,7 @@ export function SimulatorPanel({ hazard, onClose }) {
     <div className="cascade-inputs">
       <label className="cascade-field"><span>HAZARD TYPE</span><select value={hazardType} onChange={changeHazard} disabled={runStatus === 'loading'}>{hazards.map((item) => <option key={item} value={item}>{item}</option>)}</select></label>
       <label className="cascade-field"><span>FAILED SUBSTATION</span><select value={selectedSubstation} onChange={changeSubstation} disabled={substationStatus !== 'success' || runStatus === 'loading'}><option value="">Select a backend substation</option>{substations.map((item) => <option key={item.name} value={item.name}>{item.name} ({item.linked_hospitals} linked hospitals)</option>)}</select></label>
-      <label className="cascade-field"><span>HISTORICAL EVENT DATE</span>{hazardType === 'Geomagnetic' ? <input type="date" value={eventDate} onChange={changeEventDate} disabled={runStatus === 'loading'} required aria-describedby="geomagnetic-date-help" /> : <select value={eventDate} onChange={changeEventDate} disabled={runStatus === 'loading'} required>{eventDatesByHazard[hazardType].map((date) => <option key={date} value={date}>{date}</option>)}</select>}{hazardType === 'Geomagnetic' && <small id="geomagnetic-date-help">Enter a date present in the backend historical data. Available dates are not listed by the API; 2024-05-11 is verified.</small>}</label>
+      <label className="cascade-field"><span>HISTORICAL EVENT DATE</span><select value={eventDate} onChange={changeEventDate} disabled={runStatus === 'loading'} required aria-describedby={hazardType === 'Geomagnetic' ? 'geomagnetic-date-help' : undefined}>{eventDatesByHazard[hazardType].map((date) => <option key={date} value={date}>{formatEventDateLabel(hazardType, date)}</option>)}</select>{hazardType === 'Geomagnetic' && <small id="geomagnetic-date-help">Only known-valid dates are listed; this is not necessarily the complete backend history.</small>}</label>
     </div>
 
     {substationStatus === 'loading' && <div className="simulator-state" role="status">Loading available substations…</div>}
