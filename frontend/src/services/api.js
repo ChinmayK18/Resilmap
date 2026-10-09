@@ -90,6 +90,24 @@ export function getHazardScenarios({ signal } = {}) {
   return requestJson('/api/hazards/scenarios', { signal });
 }
 
+export function getMlAnomalies({ top = 50, signal } = {}) {
+  const query = new URLSearchParams({ top: String(top) });
+  return requestJson(`/api/ml/anomalies?${query.toString()}`, { signal });
+}
+
+export function getMlRisk({ top = 50, hazardType, assetType, signal } = {}) {
+  const query = new URLSearchParams({ top: String(top) });
+  if (hazardType) query.set('hazard_type', hazardType);
+  if (assetType) query.set('asset_type', assetType);
+  return requestJson(`/api/ml/risk?${query.toString()}`, { signal });
+}
+
+export function getMlEvents({ top = 50, hazardType, signal } = {}) {
+  const query = new URLSearchParams({ top: String(top) });
+  if (hazardType) query.set('hazard_type', hazardType);
+  return requestJson(`/api/ml/events?${query.toString()}`, { signal });
+}
+
 export function postRisk(hazards, { assetType = null, signal } = {}) {
   return requestJson('/api/risk', {
     method: 'POST',

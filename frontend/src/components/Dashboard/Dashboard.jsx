@@ -4,7 +4,7 @@ function SummaryCard({ label, value, detail, tone, icon, trend }) {
   return <article className={`summary-card tone-${tone}`}><div className="summary-card-top"><span className="summary-label">{label}</span><span className="summary-icon">{icon}</span></div><div className="summary-value-row"><strong>{value}</strong>{trend && <span className={`summary-trend ${trend.tone}`}>{trend.label}</span>}</div><div className="summary-detail">{detail}</div><span className="card-accent" /></article>;
 }
 
-export function Dashboard({ hazard, assets, summary, alerts, assetStatus, riskStatus }) {
+export function Dashboard({ hazard, assets, summary, alerts, assetStatus, riskStatus, anomalyState }) {
   const typeCounts = assets.reduce((result, asset) => {
     result[asset.Asset_Type] = (result[asset.Asset_Type] ?? 0) + 1;
     return result;
@@ -32,7 +32,13 @@ export function Dashboard({ hazard, assets, summary, alerts, assetStatus, riskSt
     <section className="summary-grid" aria-label={`${hazard} live risk summary`}>
       <SummaryCard label="OVERALL RISK SCORE" value={riskStatus === 'loading' ? '…' : totalRisk ?? '—'} detail={summary?.overall?.level ? `Combined live risk · ${summary.overall.level}` : 'Live risk summary'} tone="amber" icon="◌" trend={{ label: hazard.toUpperCase(), tone: 'trend-neutral' }} />
       <SummaryCard label="CRITICAL ASSETS" value={criticalDisplay} detail="From backend risk-level counts" tone="coral" icon="△" />
-      <SummaryCard label="ML ANOMALIES" value="DEMO" detail="ML API integration not included" tone="violet" icon="⌁" />
+      <SummaryCard
+        label="FLAGGED ANOMALIES"
+        value={anomalyState.status === 'loading' ? '…' : anomalyState.status === 'success' ? numberFormat.format(anomalyState.count) : '—'}
+        detail={anomalyState.status === 'success' ? 'Backend Isolation Forest output' : 'Backend ML results'}
+        tone="violet"
+        icon="⌁"
+      />
       <SummaryCard label="MONITORED ASSETS" value={assetCountDisplay} detail="Assets returned by backend" tone="teal" icon="◈" />
     </section>
 

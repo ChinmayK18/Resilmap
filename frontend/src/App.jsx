@@ -1,19 +1,30 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Dashboard } from './components/Dashboard/Dashboard.jsx';
+import { MlInsights } from './components/Dashboard/MlInsights.jsx';
 import { HazardSelector } from './components/HazardSelector/HazardSelector.jsx';
 import { ScenarioPresets, validateScenarioResponse } from './components/HazardSelector/ScenarioPresets.jsx';
 import { MapPanel } from './components/Map/MapPanel.jsx';
 import { RiskPanel } from './components/RiskPanel/RiskPanel.jsx';
 import { SimulatorPanel } from './components/Simulator/SimulatorPanel.jsx';
-import { getAssets, getHazardScenarios, postRisk } from './services/api.js';
+import { getAssets, getHazardScenarios, getMlAnomalies, getMlEvents, getMlRisk, postRisk } from './services/api.js';
 import { initialHazardSeverities } from './utils/hazards.js';
-import { demoMlByAssetId } from './utils/mockData.js';
 import './styles.css';
 
 function sameSeverities(left, right) {
   return left.heat === right.heat
     && left.flood === right.flood
     && left.geomagnetic === right.geomagnetic;
+}
+
+function readMlRecords(response, endpointName) {
+  if (!Array.isArray(response.records) || typeof response.count !== 'number') {
+    throw new Error(`${endpointName} did not return the documented count and records fields.`);
+  }
+  return { records: response.records, count: response.count };
+}
+
+function initialMlState() {
+  return { status: 'loading', records: [], count: null, error: '' };
 }
 
 export default function App() {
@@ -35,6 +46,10 @@ export default function App() {
   const [riskError, setRiskError] = useState('');
   const [riskRetry, setRiskRetry] = useState(0);
   const [riskRequestRevision, setRiskRequestRevision] = useState(0);
+  const [mlRefresh, setMlRefresh] = useState(0);
+  const [anomalyState, setAnomalyState] = useState(initialMlState);
+  const [aiRiskState, setAiRiskState] = useState(initialMlState);
+  const [eventRiskState, setEventRiskState] = useState(initialMlState);
   const [showSimulator, setShowSimulator] = useState(false);
   const latestRiskRequest = useRef(0);
 
@@ -58,6 +73,69 @@ export default function App() {
 
     return () => controller.abort();
   }, [scenarioRetry]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let current = true;
+    setAnomalyState({ status: 'loading', records: [], count: null, error: '' });
+
+    getMlAnomalies({ top: 50, signal: controller.signal })
+      .then((response) => {
+        if (!current) return;
+        setAnomalyState({ status: 'success', ...readMlRecords(response, 'ML anomalies'), error: '' });
+      })
+      .catch((error) => {
+        if (!current || error.name === 'AbortError') return;
+        setAnomalyState({ status: 'error', records: [], count: null, error: error.message || 'Unable to load ML anomalies.' });
+      });
+
+    return () => {
+      current = false;
+      controller.abort();
+    };
+  }, [mlRefresh]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let current = true;
+    setAiRiskState({ status: 'loading', records: [], count: null, error: '' });
+
+    getMlRisk({ top: 50, hazardType: hazard, signal: controller.signal })
+      .then((response) => {
+        if (!current) return;
+        setAiRiskState({ status: 'success', ...readMlRecords(response, 'AI risk rankings'), error: '' });
+      })
+      .catch((error) => {
+        if (!current || error.name === 'AbortError') return;
+        setAiRiskState({ status: 'error', records: [], count: null, error: error.message || 'Unable to load AI risk rankings.' });
+      });
+
+    return () => {
+      current = false;
+      controller.abort();
+    };
+  }, [hazard, mlRefresh]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let current = true;
+    setEventRiskState({ status: 'loading', records: [], count: null, error: '' });
+
+    getMlEvents({ top: 50, hazardType: hazard, signal: controller.signal })
+      .then((response) => {
+        if (!current) return;
+        setEventRiskState({ status: 'success', ...readMlRecords(response, 'Historical event risk'), error: '' });
+      })
+      .catch((error) => {
+        if (!current || error.name === 'AbortError') return;
+        setEventRiskState({ status: 'error', records: [], count: null, error: error.message || 'Unable to load historical event risk.' });
+      });
+
+    return () => {
+      current = false;
+      controller.abort();
+    };
+  }, [hazard, mlRefresh]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -131,6 +209,9 @@ export default function App() {
 
   const selectedAsset = assets.find((asset) => asset.Asset_ID === selectedId) ?? null;
   const selectedRisk = selectedId ? riskByAssetId.get(selectedId) ?? null : null;
+  const selectedAnomaly = selectedId
+    ? anomalyState.records.find((record) => record.Asset_ID === selectedId && record.Hazard_Type === hazard) ?? null
+    : null;
 
   const commitSeverities = useCallback((nextSeverities) => {
     setDraftSeverities(nextSeverities);
@@ -219,6 +300,14 @@ export default function App() {
           alerts={riskResult?.alerts ?? []}
           assetStatus={assetStatus}
           riskStatus={riskStatus}
+          anomalyState={anomalyState}
+        />
+        <MlInsights
+          anomalyState={anomalyState}
+          aiRiskState={aiRiskState}
+          eventState={eventRiskState}
+          hazard={hazard}
+          onRefresh={() => setMlRefresh((refresh) => refresh + 1)}
         />
 
         <section className="workspace-grid">
@@ -241,14 +330,16 @@ export default function App() {
                 hazard={hazard}
                 severity={committedSeverities[hazard.toLowerCase()]}
                 riskStatus={riskStatus}
-                mlDemo={selectedAsset ? demoMlByAssetId[selectedAsset.Asset_ID] : null}
+                mlRecord={selectedAnomaly}
+                mlStatus={anomalyState.status}
+                mlError={anomalyState.error}
                 onSimulate={() => setShowSimulator(true)}
               />
             )}
           </div>
         </section>
 
-        <footer className="page-footer"><span>RESILMAP <b>·</b> MUMBAI URBAN RESILIENCE</span><span>Backend assets + live risk <i /> ML remains demo-only</span></footer>
+        <footer className="page-footer"><span>RESILMAP <b>·</b> MUMBAI URBAN RESILIENCE</span><span>Backend assets, live risk + precomputed ML <i /> Historical results</span></footer>
       </div>
     </main>
   );

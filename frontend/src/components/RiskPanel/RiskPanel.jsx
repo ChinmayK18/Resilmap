@@ -3,7 +3,7 @@ function Meter({ label, value, max = 1 }) {
   return <div className="factor-row"><div className="factor-label"><span>{label}</span><b>{value}</b></div><div className="factor-track"><i style={{ width: `${width}%` }} /></div></div>;
 }
 
-export function RiskPanel({ asset, risk, hazard, severity, riskStatus, mlDemo, onSimulate }) {
+export function RiskPanel({ asset, risk, hazard, severity, riskStatus, mlRecord, mlStatus, mlError, onSimulate }) {
   if (!asset) {
     return <section className="panel risk-panel"><div className="panel-heading"><div><div className="panel-title"><span className="title-icon">◉</span><h2>Selected asset</h2></div><p>Asset risk profile</p></div></div><div className="risk-state">Choose a located asset marker to inspect its backend record.</div></section>;
   }
@@ -33,8 +33,17 @@ export function RiskPanel({ asset, risk, hazard, severity, riskStatus, mlDemo, o
       </div>
     </>}
 
-    <div className="ml-summary"><span className="ml-orb">✦</span><div><small>ML ANALYSIS · DEMO ONLY</small>{mlDemo ? <><b>{mlDemo.ML_Anomaly === 1 ? 'Demo anomaly flagged' : 'Demo sample not flagged'}</b><span>Demo anomaly score <strong>{mlDemo.ML_Anomaly_Score.toFixed(3)}</strong></span></> : <><b>ML endpoint not connected</b><span>No demo sample for this asset</span></>}</div><span className="ml-flag demo-flag">DEMO</span></div>
+    <div className="ml-summary"><span className="ml-orb">✦</span><div><small>PRECOMPUTED ML ANOMALY</small>
+      {mlStatus === 'loading' && <b role="status">Loading anomaly results…</b>}
+      {mlStatus === 'error' && <b className="ml-error-text" role="alert">{mlError || 'Anomaly results unavailable.'}</b>}
+      {mlStatus === 'success' && mlRecord && <><b>Anomaly flagged · {mlRecord.ML_Anomaly}</b><span>ML anomaly score <strong>{formatScore(mlRecord.ML_Anomaly_Score)}</strong></span></>}
+      {mlStatus === 'success' && !mlRecord && <><b>No matching flagged record in top 50</b><span>Flagged-only endpoint; no match does not mean normal.</span></>}
+    </div>{mlStatus === 'success' && mlRecord && <span className="ml-flag flagged">FLAG</span>}</div>
     <button type="button" className="simulate-button" onClick={onSimulate}><span>◎</span> Explore what-if scenario <i>↗</i></button>
-    <p className="panel-disclaimer">Risk values are from the live API. ML sample, when shown, is hardcoded demo data only.</p>
+    <p className="panel-disclaimer">ML values are precomputed backend output, not a live model run. Missing matches are not interpreted as safe.</p>
   </section>;
+}
+
+function formatScore(value) {
+  return typeof value === 'number' && Number.isFinite(value) ? value.toFixed(3) : '—';
 }
