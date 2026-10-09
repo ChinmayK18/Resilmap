@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Dashboard } from './components/Dashboard/Dashboard.jsx';
+import { LiveWeatherPanel } from './components/Dashboard/LiveWeatherPanel.jsx';
 import { MlInsights } from './components/Dashboard/MlInsights.jsx';
 import { HazardSelector } from './components/HazardSelector/HazardSelector.jsx';
 import { ScenarioPresets, validateScenarioResponse } from './components/HazardSelector/ScenarioPresets.jsx';
@@ -302,6 +303,7 @@ export default function App() {
           riskStatus={riskStatus}
           anomalyState={anomalyState}
         />
+        <LiveWeatherPanel />
         <MlInsights
           anomalyState={anomalyState}
           aiRiskState={aiRiskState}

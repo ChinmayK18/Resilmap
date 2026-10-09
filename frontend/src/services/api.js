@@ -108,6 +108,10 @@ export function getMlEvents({ top = 50, hazardType, signal } = {}) {
   return requestJson(`/api/ml/events?${query.toString()}`, { signal });
 }
 
+export function getLiveWeatherHazardScore({ signal } = {}) {
+  return requestJson('/api/live-weather/hazard-score', { signal });
+}
+
 export function getCascadeSubstations({ signal } = {}) {
   return requestJson('/api/cascade/substations', { signal });
 }
