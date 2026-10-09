@@ -27,3 +27,7 @@ __pycache__/
 # Python virtual environment
 .venv/
 
+# API_readme
+API_for_frontend.md
+LIVE_WEATHER_API.md
+
