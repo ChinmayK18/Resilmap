@@ -1,10 +1,11 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Dashboard } from './components/Dashboard/Dashboard.jsx';
 import { HazardSelector } from './components/HazardSelector/HazardSelector.jsx';
+import { ScenarioPresets, validateScenarioResponse } from './components/HazardSelector/ScenarioPresets.jsx';
 import { MapPanel } from './components/Map/MapPanel.jsx';
 import { RiskPanel } from './components/RiskPanel/RiskPanel.jsx';
 import { SimulatorPanel } from './components/Simulator/SimulatorPanel.jsx';
-import { getAssets, postRisk } from './services/api.js';
+import { getAssets, getHazardScenarios, postRisk } from './services/api.js';
 import { initialHazardSeverities } from './utils/hazards.js';
 import { demoMlByAssetId } from './utils/mockData.js';
 import './styles.css';
@@ -19,6 +20,11 @@ export default function App() {
   const [hazard, setHazard] = useState('Flood');
   const [draftSeverities, setDraftSeverities] = useState(initialHazardSeverities);
   const [committedSeverities, setCommittedSeverities] = useState(initialHazardSeverities);
+  const [scenarios, setScenarios] = useState([]);
+  const [scenarioStatus, setScenarioStatus] = useState('loading');
+  const [scenarioError, setScenarioError] = useState('');
+  const [scenarioRetry, setScenarioRetry] = useState(0);
+  const [selectedScenarioKey, setSelectedScenarioKey] = useState(null);
   const [assets, setAssets] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
   const [assetStatus, setAssetStatus] = useState('loading');
@@ -28,7 +34,30 @@ export default function App() {
   const [riskStatus, setRiskStatus] = useState('idle');
   const [riskError, setRiskError] = useState('');
   const [riskRetry, setRiskRetry] = useState(0);
+  const [riskRequestRevision, setRiskRequestRevision] = useState(0);
   const [showSimulator, setShowSimulator] = useState(false);
+  const latestRiskRequest = useRef(0);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    setScenarioStatus('loading');
+    setScenarioError('');
+
+    getHazardScenarios({ signal: controller.signal })
+      .then((response) => {
+        setScenarios(validateScenarioResponse(response));
+        setScenarioStatus('success');
+      })
+      .catch((error) => {
+        if (error.name === 'AbortError') return;
+        setScenarios([]);
+        setSelectedScenarioKey(null);
+        setScenarioStatus('error');
+        setScenarioError(error.message || 'Unable to load backend hazard scenarios.');
+      });
+
+    return () => controller.abort();
+  }, [scenarioRetry]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -65,12 +94,14 @@ export default function App() {
     if (assetStatus !== 'success') return undefined;
 
     const controller = new AbortController();
+    const requestId = ++latestRiskRequest.current;
     setRiskStatus('loading');
     setRiskError('');
     setRiskResult(null);
 
     postRisk(committedSeverities, { signal: controller.signal })
       .then((result) => {
+        if (requestId !== latestRiskRequest.current) return;
         if (!Array.isArray(result.assets)) {
           throw new Error('The risk response did not contain an assets array.');
         }
@@ -81,14 +112,17 @@ export default function App() {
         setRiskStatus('success');
       })
       .catch((error) => {
-        if (error.name === 'AbortError') return;
+        if (error.name === 'AbortError' || requestId !== latestRiskRequest.current) return;
         setRiskResult(null);
         setRiskStatus('error');
         setRiskError(error.message || 'Unable to calculate live risk.');
       });
 
-    return () => controller.abort();
-  }, [assetStatus, committedSeverities, riskRetry]);
+    return () => {
+      controller.abort();
+      if (requestId === latestRiskRequest.current) latestRiskRequest.current += 1;
+    };
+  }, [assetStatus, committedSeverities, riskRequestRevision, riskRetry]);
 
   const riskByAssetId = useMemo(
     () => new Map((riskResult?.assets ?? []).map((record) => [record.Asset_ID, record])),
@@ -100,10 +134,25 @@ export default function App() {
 
   const commitSeverities = useCallback((nextSeverities) => {
     setDraftSeverities(nextSeverities);
+    const matchingScenario = scenarios.find((scenario) => sameSeverities(scenario.values, nextSeverities));
+    setSelectedScenarioKey(matchingScenario?.key ?? null);
     setCommittedSeverities((current) => (
       sameSeverities(current, nextSeverities) ? current : nextSeverities
     ));
-  }, []);
+  }, [scenarios]);
+
+  const updateDraftSeverities = useCallback((nextSeverities) => {
+    setDraftSeverities(nextSeverities);
+    const matchingScenario = scenarios.find((scenario) => sameSeverities(scenario.values, nextSeverities));
+    setSelectedScenarioKey(matchingScenario?.key ?? null);
+  }, [scenarios]);
+
+  function selectScenario(scenario) {
+    setDraftSeverities(scenario.values);
+    setCommittedSeverities(scenario.values);
+    setSelectedScenarioKey(scenario.key);
+    setRiskRequestRevision((revision) => revision + 1);
+  }
 
   function selectHazard(nextHazard) {
     setHazard(nextHazard);
@@ -142,13 +191,21 @@ export default function App() {
 
         <section className="hazard-row" aria-label="Hazard selection">
           <div className="section-kicker">SELECTED HAZARD</div>
-          <div className="hazard-note"><span className="sparkle">✦</span> 0 turns a hazard off · release a slider to calculate</div>
+          <div className="hazard-note"><span className="sparkle">✦</span> Scenario inputs are not live environmental measurements</div>
         </section>
+        <ScenarioPresets
+          scenarios={scenarios}
+          status={scenarioStatus}
+          error={scenarioError}
+          selectedKey={selectedScenarioKey}
+          onSelect={selectScenario}
+          onRetry={() => setScenarioRetry((retry) => retry + 1)}
+        />
         <HazardSelector
           value={hazard}
           onChange={selectHazard}
           severities={draftSeverities}
-          onSeverityChange={setDraftSeverities}
+          onSeverityChange={updateDraftSeverities}
           onCommit={commitSeverities}
         />
 

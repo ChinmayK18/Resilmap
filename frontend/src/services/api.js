@@ -86,6 +86,10 @@ export function getAssets({ assetType, signal } = {}) {
   return requestJson(`/api/assets${suffix}`, { signal });
 }
 
+export function getHazardScenarios({ signal } = {}) {
+  return requestJson('/api/hazards/scenarios', { signal });
+}
+
 export function postRisk(hazards, { assetType = null, signal } = {}) {
   return requestJson('/api/risk', {
     method: 'POST',
