@@ -108,6 +108,20 @@ export function getMlEvents({ top = 50, hazardType, signal } = {}) {
   return requestJson(`/api/ml/events?${query.toString()}`, { signal });
 }
 
+export function getCascadeSubstations({ signal } = {}) {
+  return requestJson('/api/cascade/substations', { signal });
+}
+
+export function postCascadeRun({ failedSubstation, hazardType, eventDate, top = 50, signal } = {}) {
+  const body = {
+    failed_substation: failedSubstation,
+    hazard_type: hazardType,
+    event_date: eventDate,
+    top,
+  };
+  return requestJson('/api/cascade/run', { method: 'POST', body, signal });
+}
+
 export function postRisk(hazards, { assetType = null, signal } = {}) {
   return requestJson('/api/risk', {
     method: 'POST',
