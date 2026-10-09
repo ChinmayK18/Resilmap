@@ -68,9 +68,53 @@ def _fetch_open_meteo():
     }
 
 
+def _fetch_met_norway():
+    """Backup provider (MET Norway, free, no key). Used if Open-Meteo refuses."""
+    url = (
+        "https://api.met.no/weatherapi/locationforecast/2.0/compact"
+        "?lat=19.076&lon=72.8777"
+    )
+    request = Request(
+        url,
+        headers={"User-Agent": "ResilMap/1.0 github.com/ChinmayK18/Resilmap"},
+    )
+    with urlopen(request, timeout=8) as response:
+        data = json.loads(response.read().decode("utf-8"))
+    entry = data["properties"]["timeseries"][0]
+    details = entry["data"]["instant"]["details"]
+    next_hour = entry["data"].get("next_1_hours", {}).get("details", {})
+    rain = next_hour.get("precipitation_amount", 0)
+    return {
+        "source": "MET Norway (backup)",
+        "location": "Mumbai, Maharashtra",
+        "latitude": 19.076,
+        "longitude": 72.8777,
+        "observation_time": entry["time"],  # UTC
+        "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
+        "temperature_c": details["air_temperature"],
+        "humidity_percent": details["relative_humidity"],
+        "precipitation_mm": rain,
+        "rain_mm": rain,
+        "wind_speed_kmh": round(details["wind_speed"] * 3.6, 1),  # m/s -> km/h
+        "weather_code": None,
+        "data_status": "live_api_response",
+    }
+
+
+def _fetch_live():
+    """Try Open-Meteo first, then the backup provider."""
+    errors = []
+    for fetcher in (_fetch_open_meteo, _fetch_met_norway):
+        try:
+            return fetcher()
+        except (HTTPError, URLError, TimeoutError, OSError, ValueError, KeyError) as exc:
+            errors.append(f"{fetcher.__name__}: {exc}")
+    raise OSError(" | ".join(errors))
+
+
 @router.get("/api/live-weather")
 def get_live_weather():
-    """Latest Mumbai weather (Open-Meteo), cached for 5 minutes.
+    """Latest Mumbai weather (Open-Meteo, MET Norway as backup), cached for 5 minutes.
     If the API fails, returns the last good reading marked stale=True."""
     now = time.time()
     cached = _weather_cache["data"]
@@ -80,7 +124,7 @@ def get_live_weather():
         return {**cached, "stale": False, "cache_age_seconds": int(age)}
 
     try:
-        fresh = _fetch_open_meteo()
+        fresh = _fetch_live()
         _weather_cache["data"] = fresh
         _weather_cache["stored_at"] = now
         return {**fresh, "stale": False, "cache_age_seconds": 0}
