@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import L from 'leaflet';
-import { MapContainer, Marker, Popup, ScaleControl, TileLayer, useMap } from 'react-leaflet';
+import { MapContainer, Marker, Popup, ScaleControl, TileLayer, Tooltip, useMap } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import 'leaflet/dist/leaflet.css';
 import 'react-leaflet-cluster/dist/assets/MarkerCluster.css';
@@ -8,7 +8,6 @@ import 'react-leaflet-cluster/dist/assets/MarkerCluster.Default.css';
 
 const TILE_URL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const TILE_ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-const INITIAL_MUMBAI_VIEW = [19.076, 72.8777];
 
 const assetTypeClass = {
   Hospital: 'hospital',
@@ -28,6 +27,7 @@ const riskLevelClass = {
   High: 'high',
   Critical: 'critical',
 };
+const riskPriority = { low: 1, moderate: 2, high: 3, critical: 4, unknown: 0 };
 
 function finiteCoordinate(value, minimum, maximum) {
   if (value === null || value === undefined || value === '') return null;
@@ -69,9 +69,55 @@ function FitMapToAssets({ coordinates }) {
   return null;
 }
 
+function InvalidateMapSizeOnResize() {
+  const map = useMap();
+
+  useEffect(() => {
+    let frame = 0;
+    const invalidateSize = () => {
+      if (frame) window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => {
+        map.invalidateSize({ pan: false, debounceMoveend: true });
+      });
+    };
+
+    const container = map.getContainer();
+    const observer = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(invalidateSize);
+    observer?.observe(container);
+    if (container.parentElement) observer?.observe(container.parentElement);
+    window.addEventListener('resize', invalidateSize);
+    invalidateSize();
+
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener('resize', invalidateSize);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, [map]);
+
+  return null;
+}
+
+function makeRiskClusterIcon(cluster) {
+  const childMarkers = cluster.getAllChildMarkers();
+  const mostSevere = childMarkers.reduce((highest, marker) => {
+    const iconHtml = marker.options.icon?.options?.html ?? '';
+    const level = iconHtml.match(/level-(critical|high|moderate|low|unknown)/)?.[1] ?? 'unknown';
+    return riskPriority[level] > riskPriority[highest] ? level : highest;
+  }, 'unknown');
+
+  return L.divIcon({
+    className: 'resilmap-cluster-icon',
+    html: `<span class="resilmap-cluster-bubble level-${mostSevere}">${cluster.getChildCount()}</span>`,
+    iconSize: [42, 42],
+    iconAnchor: [21, 21],
+  });
+}
+
 export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, assetStatus, riskStatus }) {
   const [tilesFailed, setTilesFailed] = useState(false);
   const [tileRetry, setTileRetry] = useState(0);
+  const markerClusterRef = useRef(null);
 
   const locatedAssets = useMemo(() => assets.flatMap((asset) => {
     const latitude = finiteCoordinate(asset.Latitude, -90, 90);
@@ -90,6 +136,11 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
     tileerror: () => setTilesFailed(true),
   }), []);
 
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => markerClusterRef.current?.refreshClusters());
+    return () => window.cancelAnimationFrame(frame);
+  }, [riskByAssetId, selectedId]);
+
   return <section className="panel map-panel">
     <div className="panel-heading map-heading">
       <div>
@@ -100,9 +151,9 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
     </div>
 
     <div className="map-canvas leaflet-map-frame">
-      <MapContainer
+      {coordinates.length > 0 && <MapContainer
         className="resilmap-leaflet-map"
-        center={INITIAL_MUMBAI_VIEW}
+        center={coordinates[0]}
         zoom={11}
         minZoom={8}
         maxZoom={18}
@@ -115,9 +166,16 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
           attribution={TILE_ATTRIBUTION}
           eventHandlers={tileEvents}
         />
+        <InvalidateMapSizeOnResize />
         <ScaleControl position="bottomleft" imperial={false} />
         <FitMapToAssets coordinates={coordinates} />
-        <MarkerClusterGroup chunkedLoading showCoverageOnHover={false} maxClusterRadius={42}>
+        <MarkerClusterGroup
+          ref={markerClusterRef}
+          chunkedLoading
+          showCoverageOnHover={false}
+          maxClusterRadius={42}
+          iconCreateFunction={makeRiskClusterIcon}
+        >
           {locatedAssets.map(({ asset, latitude, longitude }) => {
             const risk = riskByAssetId.get(asset.Asset_ID);
             const riskLevel = risk?.Risk_Level;
@@ -128,6 +186,9 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
               icon={makeAssetIcon(asset.Asset_Type, riskLevel, selectedId === asset.Asset_ID)}
               eventHandlers={{ click: () => onSelect(asset.Asset_ID) }}
             >
+              <Tooltip direction="top" offset={[0, -12]}>
+                {risk?.Risk_Score != null ? `${risk.Risk_Level} · ${risk.Risk_Score}` : 'Risk result unavailable'}
+              </Tooltip>
               <Popup>
                 <div className="asset-popup">
                   <b>{asset.Asset_Name}</b>
@@ -139,7 +200,7 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
             </Marker>;
           })}
         </MarkerClusterGroup>
-      </MapContainer>
+      </MapContainer>}
 
       {assetStatus === 'loading' && <div className="map-empty-state" role="status">Loading asset records…</div>}
       {assetStatus === 'error' && <div className="map-empty-state" role="alert">Infrastructure assets are unavailable. Retry the asset request above.</div>}
@@ -162,6 +223,6 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
       <span><i className="legend-dot risk-low" />Low</span>
       <span><i className="legend-dot risk-unknown" />Unavailable</span>
     </div>
-    <p className="map-context-note">Map tiles and backend coordinates provide geographic context only; the map does not predict hazards or disasters.</p>
+    <p className="map-context-note">Marker and cluster colors use the latest backend risk levels. Map tiles and coordinates provide geographic context only; they do not predict hazards or disasters. Cluster colors show the highest risk level in each cluster.</p>
   </section>;
 }
