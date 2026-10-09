@@ -1,4 +1,5 @@
 import json
+import time
 from datetime import datetime, timezone
 from typing import Optional
 from urllib.error import HTTPError, URLError
@@ -14,6 +15,9 @@ from services.data_service import (
 from risk_engine.hazard_scoring import heat_severity, rainfall_severity
 
 router = APIRouter(tags=["general"])
+
+CACHE_TTL_SECONDS = 300  # reuse one Open-Meteo call for 5 minutes
+_weather_cache = {"data": None, "stored_at": 0.0}
 
 NORMAL_RAINFALL_MM = 10.0  # assumption: tune from data/processed/mumbai_rainfall_daily.csv
 
@@ -35,9 +39,7 @@ def get_assets(asset_type: Optional[str] = None):
     return {"count": len(df), "assets": to_records(df)}
 
 
-@router.get("/api/live-weather")
-def get_live_weather():
-    """Fetch the latest available weather conditions for Mumbai (Open-Meteo)."""
+def _fetch_open_meteo():
     url = (
         "https://api.open-meteo.com/v1/forecast"
         "?latitude=19.0760&longitude=72.8777"
@@ -46,27 +48,50 @@ def get_live_weather():
         "&timezone=Asia%2FKolkata"
     )
     request = Request(url, headers={"User-Agent": "ResilMap/1.0"})
+    with urlopen(request, timeout=5) as response:
+        data = json.loads(response.read().decode("utf-8"))
+    current = data["current"]
+    return {
+        "source": "Open-Meteo",
+        "location": "Mumbai, Maharashtra",
+        "latitude": 19.0760,
+        "longitude": 72.8777,
+        "observation_time": current["time"],
+        "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
+        "temperature_c": current["temperature_2m"],
+        "humidity_percent": current["relative_humidity_2m"],
+        "precipitation_mm": current["precipitation"],
+        "rain_mm": current["rain"],
+        "wind_speed_kmh": current["wind_speed_10m"],
+        "weather_code": current["weather_code"],
+        "data_status": "live_api_response",
+    }
+
+
+@router.get("/api/live-weather")
+def get_live_weather():
+    """Latest Mumbai weather (Open-Meteo), cached for 5 minutes.
+    If the API fails, returns the last good reading marked stale=True."""
+    now = time.time()
+    cached = _weather_cache["data"]
+    age = now - _weather_cache["stored_at"]
+
+    if cached is not None and age < CACHE_TTL_SECONDS:
+        return {**cached, "stale": False, "cache_age_seconds": int(age)}
 
     try:
-        with urlopen(request, timeout=5) as response:
-            data = json.loads(response.read().decode("utf-8"))
-        current = data["current"]
-        return {
-            "source": "Open-Meteo",
-            "location": "Mumbai, Maharashtra",
-            "latitude": 19.0760,
-            "longitude": 72.8777,
-            "observation_time": current["time"],
-            "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
-            "temperature_c": current["temperature_2m"],
-            "humidity_percent": current["relative_humidity_2m"],
-            "precipitation_mm": current["precipitation"],
-            "rain_mm": current["rain"],
-            "wind_speed_kmh": current["wind_speed_10m"],
-            "weather_code": current["weather_code"],
-            "data_status": "live_api_response",
-        }
+        fresh = _fetch_open_meteo()
+        _weather_cache["data"] = fresh
+        _weather_cache["stored_at"] = now
+        return {**fresh, "stale": False, "cache_age_seconds": 0}
     except (HTTPError, URLError, TimeoutError, OSError, ValueError, KeyError) as exc:
+        if cached is not None:
+            return {
+                **cached,
+                "stale": True,
+                "cache_age_seconds": int(age),
+                "message": f"Live refresh failed ({exc}); showing last good reading.",
+            }
         return {
             "location": "Mumbai, Maharashtra",
             "data_status": "unavailable",
