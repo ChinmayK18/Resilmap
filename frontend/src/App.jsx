@@ -303,15 +303,6 @@ export default function App() {
           riskStatus={riskStatus}
           anomalyState={anomalyState}
         />
-        <LiveWeatherPanel />
-        <MlInsights
-          anomalyState={anomalyState}
-          aiRiskState={aiRiskState}
-          eventState={eventRiskState}
-          hazard={hazard}
-          onRefresh={() => setMlRefresh((refresh) => refresh + 1)}
-        />
-
         <section className="workspace-grid">
           <MapPanel
             assets={assets}
@@ -340,6 +331,15 @@ export default function App() {
             )}
           </div>
         </section>
+
+        <MlInsights
+          anomalyState={anomalyState}
+          aiRiskState={aiRiskState}
+          eventState={eventRiskState}
+          hazard={hazard}
+          onRefresh={() => setMlRefresh((refresh) => refresh + 1)}
+        />
+        <LiveWeatherPanel />
 
         <footer className="page-footer"><span>RESILMAP <b>·</b> MUMBAI URBAN RESILIENCE</span><span>Backend assets, live risk + precomputed ML <i /> Historical results</span></footer>
       </div>
