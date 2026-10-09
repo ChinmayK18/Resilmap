@@ -23,7 +23,7 @@ export function MlInsights({ anomalyState, aiRiskState, eventState, hazard, onRe
 
     <div className="ml-insight-grid">
       <section className="ml-result-section" aria-label="Flagged anomalies">
-        <div className="ml-result-heading"><div><b>Flagged anomalies</b><small>Isolation Forest flagged records</small></div><strong>{anomalyState.status === 'success' ? anomalyState.count : '—'}</strong></div>
+        <div className="ml-result-heading"><div><b>Flagged anomalies · all hazards</b><small>Endpoint has no hazard filter</small></div><strong>{anomalyState.status === 'success' ? anomalyState.count : '—'}</strong></div>
         <DataState status={anomalyState.status} error={anomalyState.error} hasRecords={anomalyRecords.length > 0} empty="No flagged anomaly records were returned.">
           {anomalyRecords.length === 0 ? <div className="ml-data-state">No flagged anomaly records were returned.</div> : <>
             <div className="ml-record-list">{anomalyRecords.slice(0, 4).map((record, index) => <article className="ml-record" key={`${record.Asset_ID}-${record.Hazard_Type}-${index}`}>

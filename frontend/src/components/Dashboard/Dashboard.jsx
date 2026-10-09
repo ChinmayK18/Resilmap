@@ -35,7 +35,7 @@ export function Dashboard({ hazard, assets, summary, alerts, assetStatus, riskSt
       <SummaryCard
         label="FLAGGED ANOMALIES"
         value={anomalyState.status === 'loading' ? '…' : anomalyState.status === 'success' ? numberFormat.format(anomalyState.count) : '—'}
-        detail={anomalyState.status === 'success' ? 'Backend Isolation Forest output' : 'Backend ML results'}
+        detail={anomalyState.status === 'success' ? 'Global count · anomaly endpoint has no hazard filter' : 'Global backend ML results'}
         tone="violet"
         icon="⌁"
       />
