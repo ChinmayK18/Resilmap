@@ -69,6 +69,78 @@ function FitMapToAssets({ coordinates }) {
   return null;
 }
 
+function MapSelectionController({ selectedAsset, markerRefs, markerClusterRef }) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!selectedAsset) return;
+    const marker = markerRefs.current.get(selectedAsset.asset.Asset_ID);
+    if (!marker) {
+      map.flyTo([selectedAsset.latitude, selectedAsset.longitude], Math.max(map.getZoom(), 15), { duration: 0.8 });
+      return;
+    }
+    markerClusterRef.current?.zoomToShowLayer(marker, () => {
+      map.flyTo([selectedAsset.latitude, selectedAsset.longitude], Math.max(map.getZoom(), 15), { duration: 0.8 });
+      map.once('moveend', () => marker.openPopup());
+    });
+  }, [map, markerRefs, markerClusterRef, selectedAsset]);
+
+  return null;
+}
+
+function AssetSearch({ assets, onSelect }) {
+  const [query, setQuery] = useState('');
+  const [activeIndex, setActiveIndex] = useState(-1);
+  const [open, setOpen] = useState(false);
+  const [notice, setNotice] = useState('');
+  const inputRef = useRef(null);
+  const results = useMemo(() => {
+    const normalized = query.trim().toLocaleLowerCase();
+    if (!normalized) return [];
+    return assets.filter((asset) => (
+      String(asset.Asset_Name ?? '').toLocaleLowerCase().includes(normalized)
+      || String(asset.Asset_Type ?? '').toLocaleLowerCase().includes(normalized)
+    )).slice(0, 7);
+  }, [assets, query]);
+
+  function choose(asset) {
+    setQuery(asset.Asset_Name ?? '');
+    setOpen(false);
+    setActiveIndex(-1);
+    const latitude = finiteCoordinate(asset.Latitude, -90, 90);
+    const longitude = finiteCoordinate(asset.Longitude, -180, 180);
+    if (latitude === null || longitude === null) {
+      setNotice(`${asset.Asset_Name ?? 'This asset'} cannot be located on the map because its coordinates are unavailable.`);
+      return;
+    }
+    setNotice('');
+    onSelect(asset.Asset_ID);
+  }
+
+  function handleKeyDown(event) {
+    if (event.key === 'Escape') { setOpen(false); setActiveIndex(-1); return; }
+    if (event.key === 'ArrowDown' && results.length) {
+      event.preventDefault(); setOpen(true); setActiveIndex((index) => (index + 1) % results.length);
+    } else if (event.key === 'ArrowUp' && results.length) {
+      event.preventDefault(); setOpen(true); setActiveIndex((index) => (index <= 0 ? results.length - 1 : index - 1));
+    } else if (event.key === 'Enter' && open && results.length) {
+      event.preventDefault(); choose(results[activeIndex >= 0 ? activeIndex : 0]);
+    }
+  }
+
+  return <div className="asset-search" onMouseDown={(event) => event.stopPropagation()} onClick={(event) => event.stopPropagation()}>
+    <label className="asset-search-box">
+      <svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+      <input ref={inputRef} type="search" value={query} placeholder="Search assets by name or type…" aria-label="Search infrastructure assets" aria-autocomplete="list" aria-controls="asset-search-results" aria-expanded={open && results.length > 0} onFocus={() => query.trim() && setOpen(true)} onChange={(event) => { setQuery(event.target.value); setActiveIndex(-1); setOpen(true); setNotice(''); }} onKeyDown={handleKeyDown} />
+      {query && <button type="button" className="asset-search-clear" aria-label="Clear asset search" onClick={() => { setQuery(''); setOpen(false); setNotice(''); setActiveIndex(-1); inputRef.current?.focus(); }}>×</button>}
+    </label>
+    {open && query.trim() && <div className="asset-search-results" id="asset-search-results" role="listbox">
+      {results.length ? results.map((asset, index) => <button type="button" className={`asset-search-result${index === activeIndex ? ' is-active' : ''}`} key={asset.Asset_ID} role="option" aria-selected={index === activeIndex} onMouseEnter={() => setActiveIndex(index)} onClick={() => choose(asset)}><span><b>{asset.Asset_Name || 'Unnamed asset'}</b><small>{asset.Asset_Type || 'Unknown type'}</small></span><i>↗</i></button>) : <div className="asset-search-empty" role="status">No matching assets found</div>}
+    </div>}
+    {notice && <div className="asset-search-notice" role="status">{notice}</div>}
+  </div>;
+}
+
 function InvalidateMapSizeOnResize() {
   const map = useMap();
 
@@ -118,6 +190,8 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
   const [tilesFailed, setTilesFailed] = useState(false);
   const [tileRetry, setTileRetry] = useState(0);
   const markerClusterRef = useRef(null);
+  const markerRefs = useRef(new Map());
+  const [navigationId, setNavigationId] = useState(null);
 
   const locatedAssets = useMemo(() => assets.flatMap((asset) => {
     const latitude = finiteCoordinate(asset.Latitude, -90, 90);
@@ -151,6 +225,7 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
     </div>
 
     <div className="map-canvas leaflet-map-frame">
+      <AssetSearch assets={assets} onSelect={(id) => { onSelect(id); setNavigationId(id); }} />
       {coordinates.length > 0 && <MapContainer
         className="resilmap-leaflet-map"
         center={coordinates[0]}
@@ -169,6 +244,7 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
         <InvalidateMapSizeOnResize />
         <ScaleControl position="bottomleft" imperial={false} />
         <FitMapToAssets coordinates={coordinates} />
+        <MapSelectionController selectedAsset={locatedAssets.find(({ asset }) => asset.Asset_ID === navigationId) ?? null} markerRefs={markerRefs} markerClusterRef={markerClusterRef} />
         <MarkerClusterGroup
           ref={markerClusterRef}
           chunkedLoading
@@ -181,6 +257,7 @@ export function MapPanel({ assets, riskByAssetId, selectedId, onSelect, hazard, 
             const riskLevel = risk?.Risk_Level;
             return <Marker
               key={asset.Asset_ID}
+              ref={(marker) => { if (marker) markerRefs.current.set(asset.Asset_ID, marker); else markerRefs.current.delete(asset.Asset_ID); }}
               position={[latitude, longitude]}
               title={asset.Asset_Name}
               icon={makeAssetIcon(asset.Asset_Type, riskLevel, selectedId === asset.Asset_ID)}
